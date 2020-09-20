@@ -51,7 +51,7 @@ p, h2 {
 	align-items: center;
 	justify-content: center;
 	margin: 52px auto 0;
-	width: 21.6%;
+	width: 414px;
 	height: 66px;
 	background: #c3cbcd;
 	border-right: 2px solid #ffffff;
@@ -97,6 +97,7 @@ p, h2 {
 
 .game-pharm-patient.disabled * {
 	animation: none;
+	transform: none;
 }
 
 .game-pharm-patient-1 {

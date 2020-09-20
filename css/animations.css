@@ -42,23 +42,23 @@
 
 .game-pharm-coraxan-shadow {
 	top: auto;
-	bottom: 0;
+	bottom: -2px;
 	left: 2px;
-	width: 200px;
+	width: 133px;
 }
 
 .game-pharm-prestilol-shadow {
 	top: auto;
-	bottom: 0;
-	left: 2px;
-	width: 200px;
+	bottom: -5px;
+	left: 23px;
+	width: 170px;
 }
 
 .game-pharm-triplixam-shadow {
 	top: auto;
-	bottom: 0;
+	bottom: -11px;
 	left: 2px;
-	width: 200px;
+	width: 120px;
 }
 
 .game-pharm-preductal-hand {
@@ -245,11 +245,12 @@
 	left: 0;
 	width: 117px;
 	height: 289px;
+	animation: game-pharm-prestarium-top-wrapper 8s infinite linear;
 }
 
 .game-pharm-prestarium-eyes-wrapper {
-	top: 34px;
-	left: 35px;
+	top: 38px;
+	left: 46px;
 	width: 25px;
 	height: 14px;
 	animation: 3s game-pharm-prestarium-eyes 1s infinite ease;
@@ -276,15 +277,12 @@
 }
 
 .game-pharm-prestarium-bag {
-	top: 0;
-	left: 0;
-	width: 100px;
-}
-
-.game-pharm-prestarium-bag {
 	top: 80px;
 	left: 57px;
 	width: 56px;
+	transform-origin: 2px 2px;
+	transform: rotate(-5deg);
+	animation: game-pharm-prestarium-bag 3s infinite linear;
 }
 
 .game-pharm-prestarium-head {
@@ -300,9 +298,11 @@
 }
 
 .game-pharm-prestarium-left-hand {
-	top: 81px;
+	top: 83px;
 	left: 6px;
 	width: 34px;
+	transform-origin: 28px 3px;
+	animation: game-pharm-prestarium-left-hand 8s infinite ease-in-out;
 }
 
 .game-pharm-prestarium-legs {
@@ -321,6 +321,9 @@
 	top: 29px;
 	left: 24px;
 	width: 30px;
+	transform-origin: 8px 18px;
+	transform: rotate(-5deg);
+	animation: game-pharm-prestarium-right-hand2 3s linear infinite;
 }
 
 .game-pharm-prestarium-torso {
@@ -330,105 +333,161 @@
 }
 
 .game-pharm-coraxan-head {
-	top: 0;
-	left: 0;
-	width: 100px;
+	top: 58px;
+	left: 38px;
+	width: 54px;
+}
+
+.game-pharm-coraxan-head-wrapper {
+	animation: game-pharm-coraxan-head-wrapper 4s infinite linear;
+}
+
+.game-pharm-coraxan-eyes {
+	top: 101px;
+	left: 53px;
+	width: 22px;
+	animation: game-pharm-noliprel-eyes 2.5s infinite linear
+}
+
+.game-pharm-coraxan-glasses {
+	top: 101px;
+	left: 47px;
+	width: 36px;
 }
 
 .game-pharm-coraxan-left-hand {
-	top: 0;
-	left: 0;
-	width: 100px;
-}
-
-.game-pharm-coraxan-left-leg {
-	top: 0;
-	left: 0;
-	width: 100px;
+	top: 244px;
+	left: 55px;
+	width: 17px;
+	transform-origin: top right;
 }
 
 .game-pharm-coraxan-right-hand {
-	top: 0;
-	left: 0;
-	width: 100px;
+	top: 240px;
+	left: 58px;
+	width: 21px;
+	transform-origin: top left;
+}
+
+
+.game-pharm-coraxan-left-leg {
+	top: 242px;
+	left: 9px;
+	width: 50px;
+	transform-origin: 13px 13px;
+	animation: game-pharm-coraxan-left-leg 1.5s linear infinite;
 }
 
 .game-pharm-coraxan-right-leg {
-	top: 0;
-	left: 0;
-	width: 100px;
+	top: 244px;
+	left: 82px;
+	width: 35px;
+	transform-origin: 23px 10px;
+	animation: game-pharm-coraxan-right-leg 2s linear infinite;
 }
 
 .game-pharm-coraxan-torso {
-	top: 0;
-	left: 0;
-	width: 100px;
+	top: 123px;
+	left: 7px;
+	width: 120px;
+}
+
+.game-pharm-coraxan-torso2 {
+	top: 243px;
+	left: 27px;
+	width: 90px;
+}
+
+.game-pharm-coraxan-torso3 {
+	top: 237px;
+	left: 12px;
+	width: 102px;
+}
+
+.game-pharm-coraxan-chair {
+	top: 252px;
+	left: 24px;
+	width: 83px;
 }
 
 .game-pharm-prestilol-head {
-	top: 0;
-	left: 0;
-	width: 100px;
+	top: 59px;
+	left: 50px;
+	width: 103px;
+	transform-origin: center bottom;
+	transform: rotate(5deg);
+	animation: game-pharm-prestilol-head 4s linear infinite;
 }
 
 .game-pharm-prestilol-left-hand {
-	top: 0;
-	left: 0;
-	width: 100px;
+	top: 196px;
+	left: 106px;
+	width: 71px;
+	animation: game-pharm-prestilol-left-hand 2s linear infinite;
+	transform-origin: 71px 23px;
+	transform: rotate(-7deg);
 }
 
 .game-pharm-prestilol-legs {
-	top: 0;
-	left: 0;
-	width: 100px;
+	top: 247px;
+	left: 34px;
+	width: 123px;
 }
 
 .game-pharm-prestilol-right-hand {
-	top: 0;
-	left: 0;
-	width: 100px;
+	top: 152px;
+	left: 1px;
+	width: 57px;
+	transform-origin: 45px 45px;
+	transform: rotate(-22deg);
+	animation: game-pharm-prestilol-right-hand 2s linear infinite;
 }
 
 .game-pharm-prestilol-torso {
-	top: 0;
-	left: 0;
-	width: 100px;
+	top: 141px;
+	left: 30px;
+	width: 146px;
 }
 
 .game-pharm-triplixam-hand {
-	top: 0;
-	left: 0;
-	width: 100px;
+	top: 76px;
+	left: 87px;
+	width: 42px;
 }
 
 .game-pharm-triplixam-head {
-	top: 0;
-	left: 0;
-	width: 100px;
+	top: 15px;
+	left: 28px;
+	width: 69px;
+	transform-origin: bottom center;
+	animation: game-pharm-triplixam-head infinite linear 6s;
 }
 
 .game-pharm-triplixam-legs {
-	top: 0;
-	left: 0;
-	width: 100px;
+	top: 187px;
+	left: 23px;
+	width: 68px;
 }
 
 .game-pharm-triplixam-phone {
-	top: 0;
-	left: 0;
-	width: 100px;
+	top: 69px;
+	left: 105px;
+	width: 36px;
+	animation: game-pharm-triplixam-phone 0.3s infinite linear;
 }
 
 .game-pharm-triplixam-torso {
-	top: 0;
-	left: 0;
-	width: 100px;
+	top: 68px;
+	left: 5px;
+	width: 97px;
 }
 
 .game-pharm-triplixam-finger {
-	top: 0;
-	left: 0;
-	width: 100px;
+	top: 83px;
+	left: 110px;
+	width: 20px;
+	transform-origin: 17px 26px;
+	animation: game-pharm-triplixam-finger 0.3s infinite linear;
 }
 
 @keyframes game-pharm-preductal-top-group {
@@ -488,6 +547,18 @@
 	}
 	100% {
 		transform: rotate(0deg)
+	}
+}
+
+@keyframes game-pharm-preductal-foot {
+	from {
+		transform: rotate(0deg);
+	}
+	50% {
+		transform: rotate(-25deg);
+	}
+	to {
+		transform: rotate(0deg);
 	}
 }
 
@@ -574,9 +645,34 @@
 		transform: scaleY(1)
 	}
 }
+
+@keyframes game-pharm-coraxan-head-wrapper {
+	0% {
+		transform: translateY(0px);
+	}
+	8.33% {
+		transform: translateY(2px);
+	}
+	33.33% {
+		transform: translateY(0px);
+	}
+	50% {
+		transform: translateY(0px);
+	}
+	58.33% {
+		transform: translateY(2px);
+	}
+	83.33% {
+		transform: translateY(0px);
+	}
+	100% {
+		transform: translateY(0px);
+	}
+}
+
 @keyframes game-pharm-prestarium-eyes {
 	0% {
-		transform:rotate(14deg) scaleY(1);
+		transform: rotate(14deg) scaleY(1);
 	}
 	8.33% {
 		transform: rotate(14deg) scaleY(0.1);
@@ -598,15 +694,27 @@
 	}
 }
 
-@keyframes game-pharm-noliprel-head {
-	from {
-
+@keyframes game-pharm-prestarium-top-wrapper {
+	0% {
+		transform: rotate(0deg);
+	}
+	8.33% {
+		transform: rotate(2deg);
+	}
+	33.33% {
+		transform: rotate(0deg);
 	}
 	50% {
-
+		transform: rotate(0deg);
 	}
-	to {
-
+	58.33% {
+		transform: rotate(2deg);
+	}
+	83.33% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(0deg);
 	}
 }
 
@@ -619,18 +727,6 @@
 	}
 	to {
 		transform: rotate(0deg);
-	}
-}
-
-@keyframes game-pharm-noliprel-legs {
-	from {
-
-	}
-	50% {
-
-	}
-	to {
-
 	}
 }
 
@@ -670,78 +766,6 @@
 	}
 }
 
-@keyframes game-pharm-arifam-head {
-	from {
-
-	}
-	50% {
-
-	}
-	to {
-
-	}
-}
-
-@keyframes game-pharm-arifam-left-hand {
-	from {
-
-	}
-	50% {
-
-	}
-	to {
-
-	}
-}
-
-@keyframes game-pharm-arifam-legs {
-	from {
-
-	}
-	50% {
-
-	}
-	to {
-
-	}
-}
-
-@keyframes game-pharm-arifam-right-hand1 {
-	from {
-
-	}
-	50% {
-
-	}
-	to {
-
-	}
-}
-
-@keyframes game-pharm-arifam-right-hand2 {
-	from {
-
-	}
-	50% {
-
-	}
-	to {
-
-	}
-}
-
-@keyframes game-pharm-arifam-right-hand3 {
-	from {
-
-	}
-	50% {
-
-	}
-	to {
-
-	}
-}
-
 @keyframes game-pharm-arifam-stick {
 	from {
 		transform: rotate(-5deg);
@@ -754,197 +778,70 @@
 	}
 }
 
-@keyframes game-pharm-arifam-torso {
-	from {
-
-	}
-	50% {
-
-	}
-	to {
-
-	}
-}
 
 @keyframes game-pharm-prestarium-bag {
 	from {
-
+		transform: rotate(-5deg);
 	}
 	50% {
-
+		transform: rotate(0deg);
 	}
 	to {
-
+		transform: rotate(-5deg);
 	}
 }
 
-@keyframes game-pharm-prestarium-head {
-	from {
-
-	}
-	50% {
-
-	}
-	to {
-
-	}
-}
 
 @keyframes game-pharm-prestarium-left-hand {
 	from {
-
+		transform: rotate(0deg);
 	}
 	50% {
-
+		transform: rotate(8deg);
 	}
 	to {
-
+		transform: rotate(0deg);
 	}
 }
 
-@keyframes game-pharm-prestarium-legs {
-	from {
-
-	}
-	50% {
-
-	}
-	to {
-
-	}
-}
-
-@keyframes game-pharm-prestarium-right-hand1 {
-	from {
-
-	}
-	50% {
-
-	}
-	to {
-
-	}
-}
 
 @keyframes game-pharm-prestarium-right-hand2 {
 	from {
-
+		transform: rotate(-5deg);
 	}
 	50% {
-
+		transform: rotate(35deg);
 	}
 	to {
-
+		transform: rotate(-5deg);
 	}
 }
 
-@keyframes game-pharm-prestarium-torso {
-	from {
-
-	}
-	50% {
-
-	}
-	to {
-
-	}
-}
-
-@keyframes game-pharm-coraxan-head {
-	from {
-
-	}
-	50% {
-
-	}
-	to {
-
-	}
-}
-
-@keyframes game-pharm-coraxan-left-hand {
-	from {
-
-	}
-	50% {
-
-	}
-	to {
-
-	}
-}
 
 @keyframes game-pharm-coraxan-left-leg {
 	from {
-
+		transform: rotate(0);
 	}
 	50% {
-
+		transform: rotate(8deg);
 	}
 	to {
-
-	}
-}
-
-@keyframes game-pharm-coraxan-right-hand {
-	from {
-
-	}
-	50% {
-
-	}
-	to {
-
+		transform: rotate(0deg);
 	}
 }
 
 @keyframes game-pharm-coraxan-right-leg {
 	from {
-
+		transform: rotate(0deg);
 	}
 	50% {
-
+		transform: rotate(-8deg);
 	}
 	to {
-
+		transform: rotate(0deg);
 	}
 }
 
-@keyframes game-pharm-coraxan-torso {
-	from {
-
-	}
-	50% {
-
-	}
-	to {
-
-	}
-}
-
-@keyframes game-pharm-prestilol-head {
-	from {
-
-	}
-	50% {
-
-	}
-	to {
-
-	}
-}
-
-@keyframes game-pharm-prestilol-left-hand {
-	from {
-
-	}
-	50% {
-
-	}
-	to {
-
-	}
-}
 
 @keyframes game-pharm-prestilol-legs {
 	from {
@@ -960,13 +857,37 @@
 
 @keyframes game-pharm-prestilol-right-hand {
 	from {
-
+		transform: rotate(0deg);
 	}
 	50% {
-
+		transform: rotate(-22deg);
 	}
 	to {
+		transform: rotate(0deg);
+	}
+}
 
+@keyframes game-pharm-prestilol-head {
+	from {
+		transform: rotate(5deg);
+	}
+	50% {
+		transform: rotate(15deg);
+	}
+	to {
+		transform: rotate(5deg);
+	}
+}
+
+@keyframes game-pharm-prestilol-left-hand {
+	from {
+		transform: rotate(-7deg);
+	}
+	50% {
+		transform: rotate(3deg);
+	}
+	to {
+		transform: rotate(-7deg);
 	}
 }
 
@@ -995,61 +916,56 @@
 }
 
 @keyframes game-pharm-triplixam-head {
-	from {
 
+	0% {
+		transform: rotate(0deg)
+	}
+	8.33% {
+		transform: rotate(2deg)
+	}
+	25% {
+		transform: rotate(12deg)
+	}
+	33.33% {
+		transform: rotate(0deg)
 	}
 	50% {
-
+		transform: rotate(0deg)
 	}
-	to {
-
+	58.33% {
+		transform: rotate(12deg)
 	}
-}
-
-@keyframes game-pharm-triplixam-legs {
-	from {
-
+	75% {
+		transform: rotate(12deg)
 	}
-	50% {
-
+	83.33% {
+		transform: rotate(0deg)
 	}
-	to {
-
+	100% {
+		transform: rotate(0deg)
 	}
 }
 
 @keyframes game-pharm-triplixam-phone {
 	from {
-
+		transform: translateY(0);
 	}
 	50% {
-
+		transform: translateY(3px);
 	}
 	to {
-
-	}
-}
-
-@keyframes game-pharm-triplixam-torso {
-	from {
-
-	}
-	50% {
-
-	}
-	to {
-
+		transform: translateY(0px);
 	}
 }
 
 @keyframes game-pharm-triplixam-finger {
 	from {
-
+		transform: rotate(0deg);
 	}
 	50% {
-
+		transform: rotate(7deg);
 	}
 	to {
-
+		transform: rotate(0deg);
 	}
 }
