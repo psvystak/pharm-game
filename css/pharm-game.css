@@ -92,6 +92,10 @@ p, h2 {
 	filter: grayscale(1);
 }
 
+.game-pharm-patient.disabled *{
+	animation: none;
+}
+
 .game-pharm-patient-1 {
 	width: 175px;
 }
