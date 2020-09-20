@@ -1,0 +1,406 @@
+@import "fonts.css";
+
+html, body {
+	position: relative;
+	height: 100%;
+}
+
+body {
+	background: #eee;
+	font-family: HelveticaNeueCyr, sans-serif;
+	font-size: 14px;
+	color: #000;
+	margin: 0;
+	padding: 0;
+}
+
+p, h2 {
+	margin: 0;
+}
+
+.game-pharm-section {
+	background: url("../images/bg.jpg") no-repeat center/cover;
+	box-sizing: border-box;
+	padding: 88px 0 30px 0;
+}
+
+.game-pharm-section h2 {
+	color: #0071ba;
+	text-align: center;
+	font-size: 60px;
+	letter-spacing: 2.8px;
+	font-weight: 300;
+}
+
+.patient-choice-wrapper p {
+	color: #0071ba;
+	text-align: center;
+	font-size: 32px;
+	letter-spacing: 1.4px;
+}
+
+.game-pharm-section .sub-header {
+	text-align: center;
+	margin-top: 13px;
+	font: 300 18px/29px Roboto;
+}
+
+.patient-choice-wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 52px auto 0;
+	width: 414px;
+	height: 66px;
+	background: #c3cbcd;
+	border-right: 2px solid #ffffff;
+	border-left: 2px solid #ffffff;
+}
+
+.patients-wrapper {
+	display: flex;
+}
+
+.popup-wrapper {
+	width: 98%;
+	height: 97.4vh;
+	position: fixed;
+	top: 1.3vh;
+	left: 2.2%;
+	background: linear-gradient(0deg, rgba(243, 243, 243, 1) 21%, rgba(255, 255, 255, 1) 21%, rgba(255, 255, 255, 1) 100%);
+	box-shadow: 1px -1px 15px 0px rgba(0, 0, 0, 0.40);
+}
+
+.close-button {
+	position: absolute;
+	top: 19px;
+	right: 20%;
+	width: 29px;
+	height: 29px;
+	background: url("../images/close.png") no-repeat center/contain;
+}
+
+.patient {
+	height: 100%;
+	background: #ffffff;
+}
+
+.patient.disabled {
+	pointer-events: none;
+	filter: grayscale(1);
+}
+
+.patient-1 {
+	width: 175px;
+}
+
+.patient-2 {
+	width: 222px;
+}
+
+.patient-3 {
+	width: 149px;
+}
+
+.patient-4 {
+	width: 122px;
+	margin-left: 10px;
+}
+
+.patient-5 {
+	width: 129px;
+	margin-left: 12px;
+}
+
+.patient-6 {
+	width: 180px;
+	margin-left: 4px;
+}
+
+.patient-7 {
+	width: 10px;
+	width: 144px;
+	margin-left: 13px;
+}
+
+.swiper-container {
+	position: absolute;
+	left: 51.3%;
+	transform: translateX(-53.8%);
+	bottom: 0;
+	width: 66.44%;
+	height: 23%;
+}
+
+.swiper-slide .shadow-wrapper {
+	padding-top: 26px;
+	transition: 0.2s box-shadow linear;
+	box-sizing: border-box;
+	width: 100%;
+	height: 100%;
+}
+
+.shadow-wrapper p {
+	transition: 0.2s linear;
+	font-family: Roboto, sans-serif;
+	font-weight: bold;
+}
+
+.swiper-slide.active .shadow-wrapper p {
+	color: #0067aa;
+	transform: translateY(-17px);
+}
+
+.swiper-slide.active .shadow-wrapper {
+	padding-top: 21px;
+	border-top: 5px #0067aa solid;
+	box-shadow: 0 -1px 5px 0 rgba(108, 199, 222, 0.7);
+	background: #f3f3f3;
+}
+
+.swiper-slide {
+	text-align: center;
+	font-size: 18px;
+	flex-flow: column;
+	display: flex;
+	align-items: center;
+	box-sizing: border-box;
+	padding: 0 3px;
+	width: 346px;
+}
+
+.swiper-button-prev:after, .swiper-container-rtl .swiper-button-next:after, .swiper-button-next:after, .swiper-container-rtl .swiper-button-prev:after {
+	font-size: 23px;
+	font-weight: bold;
+	color: #0071ba;
+}
+
+.swiper-button-next, .swiper-button-prev {
+	top: 56%;
+}
+
+.swiper-slide.prestilol img {
+	margin-top: 3%;
+	width: 240px;
+}
+
+.swiper-slide.noliprel img {
+	width: 248px;
+	margin-top: 2%;
+}
+
+.swiper-slide.triplixam img {
+	margin-top: 8%;
+	width: 258px;
+}
+
+.swiper-slide.arifam img {
+	margin-top: 4%;
+	width: 75%;
+}
+
+.swiper-slide.b-prestarium img {
+	margin-top: 12%;
+	width: 277px;
+}
+
+.swiper-slide.preductal img {
+	margin-top: 2%;
+	margin-left: 7%;
+	width: 222px;
+}
+
+.swiper-slide.coraxan img {
+	margin-top: 2%;
+	margin-right: 7%;
+	width: 194px;
+}
+
+.patients-wrapper {
+	width: 1160px;
+	height: 382px;
+	margin: 43px auto 0;
+}
+
+.popup-wrapper {
+}
+
+.close-button {
+}
+
+.popup-content {
+	width: 80%;
+	height: 79%;
+	display: flex;
+}
+
+.popup-aside-wrapper {
+	width: 54.5%;
+	background: #6bc7de;
+	position: relative;
+}
+
+.popup-aside-wrapper .popup-background {
+	position: absolute;
+	opacity: 1;
+	top: 91px;
+	left: auto;
+	right: 0;
+}
+
+.popup-patient-info-wrapper {
+	width: 45.5%;
+}
+
+.popup-patient-info-wrapper > p {
+	color: #000000;
+	margin-left: 64px;
+	font: 300 26px/30px HelveticaNeueCyr, sans-serif;
+	margin-bottom: 33px;
+}
+
+.popup-patient-info-wrapper > p b {
+	color: #909090;
+}
+
+.popup-header {
+	margin: 67px 0 40px;
+	background: #6bc7de;
+	display: flex;
+	align-items: center;
+	height: 103px;
+	box-sizing: border-box;
+	padding-left: 58px;
+}
+
+.popup-aside-wrapper img {
+	opacity: 0;
+	transition: 0.2s linear;
+}
+
+.popup-aside-wrapper img.visible {
+	opacity: 1;
+}
+
+.popup-aside-wrapper img:not(:first-of-type) {
+	position: absolute;
+	top: 136px;
+	right: 4%;
+	width: 50.5%;
+	width: auto;
+	max-height: 54vh;
+}
+
+.popup-header p {
+	color: #ffffff;
+	font: 300 1.7vw/40px HelveticaNeueCyr, sans-serif;
+}
+
+.popup-answer-type {
+	position: absolute;
+	top: 61%;
+	left: 34%;
+	display: flex;
+	width: 29.5%;
+	height: 9.3%;
+	background: #ffffff;
+	border: 1px solid #de81a2;
+	box-shadow: 6px 0px 16px 1px rgb(142 143 144 / 0.4);
+}
+
+.aside-popup-wrapper {
+	width: 104px;
+	background: #de81a2;
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+	box-sizing: border-box;
+	padding-top: 21px;
+}
+
+.popup-answer-type p {
+	width: calc(100% - 104px);
+	color: #de81a2;
+	font-size: 27px;
+}
+
+.popup-answer-type.popup-no p {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.popup-answer-type.popup-ok {
+
+	top: 52%;
+
+	transform: translateY(-33%);
+
+	left: 23.5%;
+
+	width: 50.3%;
+
+	height: auto;
+
+	background: #ffffff;
+
+	border: 1px solid #de81a2;
+}
+
+.popup-answer-type.popup-ok p {
+	box-sizing: border-box;
+	padding: 30px;
+	font-size: 1vw;
+	line-height: 2.7vh;
+}
+
+.popup-ok .aside-popup-wrapper {
+
+}
+
+.noliprel .popup-aside-wrapper .happy { /* left: 374px; */
+}
+
+.choiche-type-popup {
+	position: absolute;
+	top: 61.1%;
+	left: 34%;
+	width: 29.5%;
+	height: 88px;
+	background: #ffffff;
+	border: 1px solid purple;
+}
+
+.success .swiper-slide {
+	pointer-events: none;
+}
+
+@media screen and (max-width: 1280px) and (orientation: landscape) {
+	.swiper-slide.prestilol img,
+	.swiper-slide.noliprel img,
+	.swiper-slide.arifam img {
+		width: 50%;
+		margin-top: 6%;
+	}
+
+	.swiper-slide.b-prestarium img {
+width: 76%;
+margin-top: 8%;
+}
+
+	.swiper-slide.coraxan img {
+		width: 48%;
+		margin-top: 2%;
+	}
+
+	.swiper-slide.preductal img {
+		margin-left: 4%;
+		width: 57%;
+	}
+
+	.swiper-slide.triplixam img {
+		margin-top: 7%;
+		width: 66%;
+	}
+}
+
