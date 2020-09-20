@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset="utf-8">
-	<title>Swiper demo</title>
+	<title>Pharm game</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- Link Swiper's CSS -->
 	<link rel="stylesheet" href="css/swiper-bundle.min.css">
@@ -19,60 +19,105 @@
 		<p><b>ОБЕРІТЬ ПАЦІЄНТА</b></p>
 	</div>
 	<div class="game-pharm-patients-wrapper">
-		<div class="game-pharm-patient game-pharm-patient-1" @click="openPopup('game-pharm-preductal')" :class="{disabled: disablePatient('game-pharm-preductal')}">
+		<div class="game-pharm-patient game-pharm-patient-1" @click="openPopup('game-pharm-preductal')"
+		     :class="{disabled: disablePatient('game-pharm-preductal')}">
 			<p style="position: relative; z-index: 100500; color: black; font-size: 24px">preductal</p>
-			<img class="game-pharm-animation-image game-pharm-preductal-legs" src="images/preductal-animation/legs.png" alt="Part of the patient">
-			<img class="game-pharm-animation-image game-pharm-preductal-foot" src="images/preductal-animation/foot.png" alt="Part of the patient">
+			<img class="game-pharm-animation-image game-pharm-preductal-shadow game-pharm-patient-shadow"
+			     src="images/preductal-animation/shadow.png" alt="Part of the patient">
+			<img class="game-pharm-animation-image game-pharm-preductal-legs" src="images/preductal-animation/legs.png"
+			     alt="Part of the patient">
+			<img class="game-pharm-animation-image game-pharm-preductal-foot" src="images/preductal-animation/foot.png"
+			     alt="Part of the patient">
 			<div class="game-pharm-animation-image game-pharm-preductal-top-group">
-				<img class="game-pharm-animation-image game-pharm-preductal-hand" src="images/preductal-animation/hand.png" alt="Part of the patient">
-				<img class="game-pharm-animation-image game-pharm-preductal-torso" src="images/preductal-animation/torso.png" alt="Part of the patient">
-				<img class="game-pharm-animation-image game-pharm-preductal-head" src="images/preductal-animation/head.png" alt="Part of the patient">
+				<img class="game-pharm-animation-image game-pharm-preductal-hand"
+				     src="images/preductal-animation/hand.png" alt="Part of the patient">
+				<img class="game-pharm-animation-image game-pharm-preductal-torso"
+				     src="images/preductal-animation/torso.png" alt="Part of the patient">
+				<img class="game-pharm-animation-image game-pharm-preductal-head"
+				     src="images/preductal-animation/head.png" alt="Part of the patient">
 			</div>
 		</div>
-		<div class="game-pharm-patient game-pharm-patient-2" @click="openPopup('game-pharm-noliprel')" :class="{disabled: disablePatient('game-pharm-noliprel')}">
+		<div class="game-pharm-patient game-pharm-patient-2" @click="openPopup('game-pharm-noliprel')"
+		     :class="{disabled: disablePatient('game-pharm-noliprel')}">
 			<p style="position: relative; z-index: 100500; color: black; font-size: 24px">Noliprel</p>
-			<img class="game-pharm-animation-image game-pharm-noliprel-legs" src="images/noliprel-animation/legs.png" alt="Part of the patient">
+			<img class="game-pharm-animation-image game-pharm-noliprel-shadow game-pharm-patient-shadow"
+			     src="images/noliprel-animation/shadow.png" alt="Part of the patient">
+			<img class="game-pharm-animation-image game-pharm-noliprel-legs" src="images/noliprel-animation/legs.png"
+			     alt="Part of the patient">
 			<div class="game-pharm-animation-image game-pharm-noliprel-top-group">
-				<img class="game-pharm-animation-image game-pharm-noliprel-left-hand" src="images/noliprel-animation/left-hand.png" alt="Part of the patient">
-				<img class="game-pharm-animation-image game-pharm-noliprel-torso" src="images/noliprel-animation/torso.png" alt="Part of the patient">
-				<img class="game-pharm-animation-image game-pharm-noliprel-head" src="images/noliprel-animation/head.png" alt="Part of the patient">
-				<img class="game-pharm-animation-image game-pharm-noliprel-right-hand" src="images/noliprel-animation/right-hand.png" alt="Part of the patient">
+				<img class="game-pharm-animation-image game-pharm-noliprel-left-hand"
+				     src="images/noliprel-animation/left-hand.png" alt="Part of the patient">
+				<img class="game-pharm-animation-image game-pharm-noliprel-torso"
+				     src="images/noliprel-animation/torso.png" alt="Part of the patient">
+				<img class="game-pharm-animation-image game-pharm-noliprel-head"
+				     src="images/noliprel-animation/head.png" alt="Part of the patient">
+				<img class="game-pharm-animation-image game-pharm-noliprel-eyes"
+				     src="images/noliprel-animation/eyes.png" alt="Part of the patient">
+				<img class="game-pharm-animation-image game-pharm-noliprel-right-hand"
+				     src="images/noliprel-animation/right-hand.png" alt="Part of the patient">
 			</div>
 		</div>
-		<div class="game-pharm-patient game-pharm-patient-3" @click="openPopup('game-pharm-arifam')" :class="{disabled: disablePatient('game-pharm-arifam')}">
+		<div class="game-pharm-patient game-pharm-patient-3" @click="openPopup('game-pharm-arifam')"
+		     :class="{disabled: disablePatient('game-pharm-arifam')}">
 			<p style="position: relative; z-index: 100500; color: black; font-size: 24px">Arifam</p>
-			<img class="game-pharm-animation-image game-pharm-arifam-head" src="images/arifam-animation/head.png" alt="Part of the patient">
-			<img class="game-pharm-animation-image game-pharm-arifam-left-hand" src="images/arifam-animation/left-hand.png" alt="Part of the patient">
-			<img class="game-pharm-animation-image game-pharm-arifam-legs" src="images/arifam-animation/legs.png" alt="Part of the patient">
-			<img class="game-pharm-animation-image game-pharm-arifam-right-hand1" src="images/arifam-animation/right-hand1.png" alt="Part of the patient">
-			<img class="game-pharm-animation-image game-pharm-arifam-right-hand2" src="images/arifam-animation/right-hand2.png" alt="Part of the patient">
-			<img class="game-pharm-animation-image game-pharm-arifam-right-hand3" src="images/arifam-animation/right-hand3.png" alt="Part of the patient">
-			<img class="game-pharm-animation-image game-pharm-arifam-stick" src="images/arifam-animation/stick.png" alt="Part of the patient">
-			<img class="game-pharm-animation-image game-pharm-arifam-torso" src="images/arifam-animation/torso.png" alt="Part of the patient">
+			<img class="game-pharm-animation-image game-pharm-arifam-shadow game-pharm-patient-shadow"
+			     src="images/arifam-animation/shadow.png" alt="Part of the patient">
+			<img class="game-pharm-animation-image game-pharm-arifam-legs" src="images/arifam-animation/legs.png"
+			     alt="Part of the patient">
+			<div class="game-pharm-animation-image game-pharm-arifam-top-group">
+				<div class="game-pharm-animation-image game-pharm-arifam-right-hand-group">
+					<img class="game-pharm-animation-image game-pharm-arifam-stick"
+					     src="images/arifam-animation/stick.png" alt="Part of the patient">
+					<img class="game-pharm-animation-image game-pharm-arifam-right-hand3"
+					     src="images/arifam-animation/right-hand3.png" alt="Part of the patient">
+					<img class="game-pharm-animation-image game-pharm-arifam-right-hand2"
+					     src="images/arifam-animation/right-hand2.png" alt="Part of the patient">
+					<img class="game-pharm-animation-image game-pharm-arifam-right-hand1"
+					     src="images/arifam-animation/right-hand1.png" alt="Part of the patient">
+				</div>
+				<img class="game-pharm-animation-image game-pharm-arifam-torso" src="images/arifam-animation/torso.png"
+				     alt="Part of the patient">
+				<img class="game-pharm-animation-image game-pharm-arifam-left-hand"
+				     src="images/arifam-animation/left-hand.png" alt="Part of the patient">
+				<img class="game-pharm-animation-image game-pharm-arifam-torso-shadow"
+				     src="images/arifam-animation/shadow2.png" alt="Part of the patient">
+				<img class="game-pharm-animation-image game-pharm-arifam-head" src="images/arifam-animation/head.png"
+				     alt="Part of the patient">
+				<img class="game-pharm-animation-image game-pharm-arifam-eyes" src="images/arifam-animation/eyes.png"
+				     alt="Part of the patient">
+			</div>
 		</div>
 		<div class="game-pharm-patient game-pharm-patient-4" @click="openPopup('game-pharm-b-prestarium')"
 		     :class="{disabled: disablePatient('game-pharm-b-prestarium')}">
-
 			<p style="position: relative; z-index: 100500; color: black; font-size: 24px">Prestarium</p>
-			<img class="game-pharm-animation-image game-pharm-prestarium-bag" src="images/prestarium-animation/bag.png"
-			     alt="Part of the patient">
-			<img class="game-pharm-animation-image game-pharm-prestarium-head"
-			     src="images/prestarium-animation/head.png" alt="Part of the patient">
-			<img class="game-pharm-animation-image game-pharm-prestarium-left-hand"
-			     src="images/prestarium-animation/left-hand.png" alt="Part of the patient">
+			<img class="game-pharm-animation-image game-pharm-prestarium-shadow game-pharm-patient-shadow"
+			     src="images/prestarium-animation/shadow.png" alt="Part of the patient">
 			<img class="game-pharm-animation-image game-pharm-prestarium-legs"
 			     src="images/prestarium-animation/legs.png" alt="Part of the patient">
-			<img class="game-pharm-animation-image game-pharm-prestarium-right-hand1"
-			     src="images/prestarium-animation/right-hand1.png" alt="Part of the patient">
-			<img class="game-pharm-animation-image game-pharm-prestarium-right-hand2"
-			     src="images/prestarium-animation/right-hand2.png" alt="Part of the patient">
-			<img class="game-pharm-animation-image game-pharm-prestarium-torso"
-			     src="images/prestarium-animation/torso.png" alt="Part of the patient">
+			<div class="game-pharm-animation-image game-pharm-prestarium-top-wrapper">
+				<div class="game-pharm-animation-image game-pharm-prestarium-right-hand">
+					<img class="game-pharm-animation-image game-pharm-prestarium-right-hand1" src="images/prestarium-animation/right-hand1.png" alt="Part of the patient">
+					<img class="game-pharm-animation-image game-pharm-prestarium-right-hand2" src="images/prestarium-animation/right-hand2.png" alt="Part of the patient">
+				</div>
+				<img class="game-pharm-animation-image game-pharm-prestarium-bag" src="images/prestarium-animation/bag.png"
+				     alt="Part of the patient">
+				<img class="game-pharm-animation-image game-pharm-prestarium-left-hand" src="images/prestarium-animation/left-hand.png" alt="Part of the patient">
+				<div class="game-pharm-animation-image game-pharm-prestarium-head-wrapper">
+					<img class="game-pharm-animation-image game-pharm-prestarium-head" src="images/prestarium-animation/head.png" alt="Part of the patient">
+				</div>
+				<img class="game-pharm-animation-image game-pharm-prestarium-torso" src="images/prestarium-animation/torso.png" alt="Part of the patient">
+				<img class="game-pharm-animation-image game-pharm-prestarium-face" src="images/prestarium-animation/your-face!.png" alt="Part of the patient">
+				<div class="game-pharm-animation-image game-pharm-prestarium-eyes-wrapper">
+					<img class="game-pharm-animation-image game-pharm-prestarium-eyes" src="images/prestarium-animation/eyes.png" alt="Part of the patient">
+				</div>
+			</div>
+
 		</div>
 		<div class="game-pharm-patient game-pharm-patient-5" @click="openPopup('game-pharm-coraxan')"
 		     :class="{disabled: disablePatient('game-pharm-coraxan')}">
-
 			<p style="position: relative; z-index: 100500; color: black; font-size: 24px">Coraxan</p>
+			<img class="game-pharm-animation-image game-pharm-coraxan-shadow game-pharm-patient-shadow"
+			     src="images/coraxan-animation/shadow.png" alt="Part of the patient">
 			<img class="game-pharm-animation-image game-pharm-coraxan-head" src="images/coraxan-animation/head.png"
 			     alt="Part of the patient">
 			<img class="game-pharm-animation-image game-pharm-coraxan-left-hand"
@@ -89,6 +134,8 @@
 		<div class="game-pharm-patient game-pharm-patient-6" @click="openPopup('game-pharm-prestilol')"
 		     :class="{disabled: disablePatient('game-pharm-prestilol')}">
 			<p style="position: relative; z-index: 100500; color: black; font-size: 24px">Prestilol</p>
+			<img class="game-pharm-animation-image game-pharm-prestilol-shadow game-pharm-patient-shadow"
+			     src="images/prestilol-animation/shadow.png" alt="Part of the patient">
 			<img class="game-pharm-animation-image game-pharm-prestilol-head" src="images/prestilol-animation/head.png"
 			     alt="Part of the patient">
 			<img class="game-pharm-animation-image game-pharm-prestilol-left-hand"
@@ -103,6 +150,8 @@
 		<div class="game-pharm-patient game-pharm-patient-7" @click="openPopup('game-pharm-triplixam')"
 		     :class="{disabled: disablePatient('game-pharm-triplixam')}">
 			<p style="position: relative; z-index: 100500; color: black; font-size: 24px">Triplixam</p>
+			<img class="game-pharm-animation-image game-pharm-triplixam-shadow game-pharm-patient-shadow"
+			     src="images/triplixam-animation/shadow.png" alt="Part of the patient">
 			<img class="game-pharm-animation-image game-pharm-triplixam-hand" src="images/triplixam-animation/hand.png"
 			     alt="Part of the patient">
 			<img class="game-pharm-animation-image game-pharm-triplixam-head" src="images/triplixam-animation/head.png"

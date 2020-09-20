@@ -51,7 +51,7 @@ p, h2 {
 	align-items: center;
 	justify-content: center;
 	margin: 52px auto 0;
-	width: 414px;
+	width: 21.6%;
 	height: 66px;
 	background: #c3cbcd;
 	border-right: 2px solid #ffffff;
@@ -60,6 +60,7 @@ p, h2 {
 
 .game-pharm-patients-wrapper {
 	display: flex;
+	flex-wrap: wrap;
 }
 
 .game-pharm-popup-wrapper {
@@ -73,6 +74,7 @@ p, h2 {
 }
 
 .game-pharm-close-button {
+	cursor: pointer;
 	position: absolute;
 	top: 19px;
 	right: 20%;
@@ -83,8 +85,9 @@ p, h2 {
 
 .game-pharm-patient {
 	position: relative;
-	height: 100%;
-	background: #ffffff;
+	cursor: pointer;
+	height: 382px;
+	margin-top: 20px;
 }
 
 .game-pharm-patient.disabled {
@@ -92,7 +95,7 @@ p, h2 {
 	filter: grayscale(1);
 }
 
-.game-pharm-patient.disabled *{
+.game-pharm-patient.disabled * {
 	animation: none;
 }
 
@@ -223,9 +226,9 @@ p, h2 {
 }
 
 .game-pharm-patients-wrapper {
-	width: 1160px;
-	height: 382px;
-	margin: 43px auto 0;
+	max-width: 1160px;
+	height: auto;
+	margin: 23px auto 0;
 }
 
 .game-pharm-popup-content {
@@ -385,6 +388,14 @@ p, h2 {
 		margin-top: 6%;
 	}
 
+	.game-pharm-patients-wrapper{
+		justify-content: space-between;
+	}
+
+	.game-pharm-patient{
+		margin-left: 0;
+	}
+
 	.swiper-slide.game-pharm-b-prestarium img {
 		width: 76%;
 		margin-top: 8%;
@@ -403,5 +414,22 @@ p, h2 {
 	.swiper-slide.game-pharm-triplixam img {
 		margin-top: 7%;
 		width: 66%;
+	}
+}
+
+@media screen and (max-width: 1024px) and (orientation: portrait) {
+	.game-pharm-patient-choice-wrapper {
+		width: 60%;
+	}
+
+	.game-pharm-patients-wrapper{
+		justify-content: center;
+	}
+
+	.game-pharm-patient{
+		margin-left: 0;
+	}
+	.game-pharm-section h2 {
+		font-size: 11vw;
 	}
 }
