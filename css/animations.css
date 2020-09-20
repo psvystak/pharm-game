@@ -1,0 +1,564 @@
+.game-pharm-animation-image {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.game-pharm-preductal-hand {
+
+}
+
+.game-pharm-preductal-legs {
+
+}
+
+.game-pharm-preductal-foot {
+
+}
+
+.game-pharm-preductal-torso {
+
+}
+
+.game-pharm-preductal-head {
+
+}
+
+.game-pharm-noliprel-head {
+
+}
+
+.game-pharm-noliprel-left-hand {
+
+}
+
+.game-pharm-noliprel-legs {
+
+}
+
+.game-pharm-noliprel-right-hand {
+
+}
+
+.game-pharm-noliprel-torso {
+
+}
+
+.game-pharm-arifam-bag {
+
+}
+
+.game-pharm-arifam-head {
+
+}
+
+.game-pharm-arifam-left-hand {
+
+}
+
+.game-pharm-arifam-legs {
+
+}
+
+.game-pharm-arifam-right-hand1 {
+
+}
+
+.game-pharm-arifam-right-hand2 {
+
+}
+
+.game-pharm-arifam-right-hand3 {
+
+}
+
+.game-pharm-arifam-stick {
+
+}
+
+.game-pharm-arifam-torso {
+
+}
+
+.game-pharm-prestarium-bag {
+
+}
+
+.game-pharm-prestarium-head {
+
+}
+
+.game-pharm-prestarium-left-hand {
+
+}
+
+.game-pharm-prestarium-legs {
+
+}
+
+.game-pharm-prestarium-right-hand1 {
+
+}
+
+.game-pharm-prestarium-right-hand2 {
+
+}
+
+.game-pharm-prestarium-torso {
+
+}
+
+.game-pharm-coraxan-head {
+
+}
+
+.game-pharm-coraxan-left-hand {
+
+}
+
+.game-pharm-coraxan-left-leg {
+
+}
+
+.game-pharm-coraxan-right-hand {
+
+}
+
+.game-pharm-coraxan-right-leg {
+
+}
+
+.game-pharm-coraxan-torso {
+
+}
+
+.game-pharm-prestilol-head {
+
+}
+
+.game-pharm-prestilol-left-hand {
+
+}
+
+.game-pharm-prestilol-legs {
+
+}
+
+.game-pharm-prestilol-right-hand {
+
+}
+
+.game-pharm-prestilol-torso {
+
+}
+
+.game-pharm-triplixam-hand {
+
+}
+
+.game-pharm-triplixam-head {
+
+}
+
+.game-pharm-triplixam-legs {
+
+}
+
+.game-pharm-triplixam-phone {
+
+}
+
+.game-pharm-triplixam-torso {
+
+}
+
+.game-pharm-triplixam-finger {
+
+}
+
+@keyframes game-pharm-preductal-hand {
+	from {
+
+	}
+	to {
+
+	}
+}
+
+@keyframes game-pharm-preductal-legs {
+	from {
+
+	}
+	to {
+
+	}
+}
+
+@keyframes game-pharm-preductal-foot {
+	from {
+
+	}
+	to {
+
+	}
+}
+
+@keyframes game-pharm-preductal-torso {
+	from {
+
+	}
+	to {
+
+	}
+}
+
+@keyframes game-pharm-preductal-head {
+	from {
+
+	}
+	to {
+
+	}
+}
+
+@keyframes game-pharm-noliprel-head {
+	from {
+
+	}
+	to {
+
+	}
+}
+
+@keyframes game-pharm-noliprel-left-hand {
+	from {
+
+	}
+	to {
+
+	}
+}
+
+@keyframes game-pharm-noliprel-legs {
+	from {
+
+	}
+	to {
+
+	}
+}
+
+@keyframes game-pharm-noliprel-right-hand {
+	from {
+
+	}
+	to {
+
+	}
+}
+
+@keyframes game-pharm-noliprel-torso {
+	from {
+
+	}
+	to {
+
+	}
+}
+
+@keyframes game-pharm-arifam-bag {
+	from {
+
+	}
+	to {
+
+	}
+}
+
+@keyframes game-pharm-arifam-head {
+	from {
+
+	}
+	to {
+
+	}
+}
+
+@keyframes game-pharm-arifam-left-hand {
+	from {
+
+	}
+	to {
+
+	}
+}
+
+@keyframes game-pharm-arifam-legs {
+	from {
+
+	}
+	to {
+
+	}
+}
+
+@keyframes game-pharm-arifam-right-hand1 {
+	from {
+
+	}
+	to {
+
+	}
+}
+
+@keyframes game-pharm-arifam-right-hand2 {
+	from {
+
+	}
+	to {
+
+	}
+}
+
+@keyframes game-pharm-arifam-right-hand3 {
+	from {
+
+	}
+	to {
+
+	}
+}
+
+@keyframes game-pharm-arifam-stick {
+	from {
+
+	}
+	to {
+
+	}
+}
+
+@keyframes game-pharm-arifam-torso {
+	from {
+
+	}
+	to {
+
+	}
+}
+
+@keyframes game-pharm-prestarium-bag {
+	from {
+
+	}
+	to {
+
+	}
+}
+
+@keyframes game-pharm-prestarium-head {
+	from {
+
+	}
+	to {
+
+	}
+}
+
+@keyframes game-pharm-prestarium-left-hand {
+	from {
+
+	}
+	to {
+
+	}
+}
+
+@keyframes game-pharm-prestarium-legs {
+	from {
+
+	}
+	to {
+
+	}
+}
+
+@keyframes game-pharm-prestarium-right-hand1 {
+	from {
+
+	}
+	to {
+
+	}
+}
+
+@keyframes game-pharm-prestarium-right-hand2 {
+	from {
+
+	}
+	to {
+
+	}
+}
+
+@keyframes game-pharm-prestarium-torso {
+	from {
+
+	}
+	to {
+
+	}
+}
+
+@keyframes game-pharm-coraxan-head {
+	from {
+
+	}
+	to {
+
+	}
+}
+
+@keyframes game-pharm-coraxan-left-hand {
+	from {
+
+	}
+	to {
+
+	}
+}
+
+@keyframes game-pharm-coraxan-left-leg {
+	from {
+
+	}
+	to {
+
+	}
+}
+
+@keyframes game-pharm-coraxan-right-hand {
+	from {
+
+	}
+	to {
+
+	}
+}
+
+@keyframes game-pharm-coraxan-right-leg {
+	from {
+
+	}
+	to {
+
+	}
+}
+
+@keyframes game-pharm-coraxan-torso {
+	from {
+
+	}
+	to {
+
+	}
+}
+
+@keyframes game-pharm-prestilol-head {
+	from {
+
+	}
+	to {
+
+	}
+}
+
+@keyframes game-pharm-prestilol-left-hand {
+	from {
+
+	}
+	to {
+
+	}
+}
+
+@keyframes game-pharm-prestilol-legs {
+	from {
+
+	}
+	to {
+
+	}
+}
+
+@keyframes game-pharm-prestilol-right-hand {
+	from {
+
+	}
+	to {
+
+	}
+}
+
+@keyframes game-pharm-prestilol-torso {
+	from {
+
+	}
+	to {
+
+	}
+}
+
+@keyframes game-pharm-triplixam-hand {
+	from {
+
+	}
+	to {
+
+	}
+}
+
+@keyframes game-pharm-triplixam-head {
+	from {
+
+	}
+	to {
+
+	}
+}
+
+@keyframes game-pharm-triplixam-legs {
+	from {
+
+	}
+	to {
+
+	}
+}
+
+@keyframes game-pharm-triplixam-phone {
+	from {
+
+	}
+	to {
+
+	}
+}
+
+@keyframes game-pharm-triplixam-torso {
+	from {
+
+	}
+	to {
+
+	}
+}
+
+@keyframes game-pharm-triplixam-finger {
+	from {
+
+	}
+	to {
+
+	}
+}

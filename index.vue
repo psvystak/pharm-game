@@ -13,53 +13,142 @@
 <body>
 <section class="game-pharm-section">
 	<h2>МЕДИЧНИЙ СИМУЛЯТОР</h2>
-	<p class="sub-header">Медичний симулятор розроблений в допомогу практикуючому лікарю.<br>
+	<p class="game-pharm-sub-header">Медичний симулятор розроблений в допомогу практикуючому лікарю.<br>
 		Лікарські засоби повинні призначатися відповідно до зареєстрованої інструкції.</p>
-	<div class="patient-choice-wrapper">
+	<div class="game-pharm-patient-choice-wrapper">
 		<p><b>ОБЕРІТЬ ПАЦІЄНТА</b></p>
 	</div>
-	<div class="patients-wrapper">
-		<div class="patient patient-1" @click="openPopup('preductal')" :class="{disabled: disablePatient('preductal')}">
-			Preductal
+	<div class="game-pharm-patients-wrapper">
+		<div class="game-pharm-patient game-pharm-patient-1" @click="openPopup('game-pharm-preductal')"
+		     :class="{disabled: disablePatient('game-pharm-preductal')}">
+			<img class="game-pharm-animation-image game-pharm-preductal-legs" src="images/preductal-animation/legs.png"
+			     alt="Part of the patient">
+			<img class="game-pharm-animation-image game-pharm-preductal-foot" src="images/preductal-animation/foot.png"
+			     alt="Part of the patient">
+			<div class="game-pharm-preductal-top-group">
+				<img class="game-pharm-animation-image game-pharm-preductal-hand" src="images/preductal-animation/hand.png" alt="Part of the patient">
+				<img class="game-pharm-animation-image game-pharm-preductal-torso" src="images/preductal-animation/torso.png" alt="Part of the patient">
+				<img class="game-pharm-animation-image game-pharm-preductal-head" src="images/preductal-animation/head.png" alt="Part of the patient">
+			</div>
 		</div>
-		<div class="patient patient-2" @click="openPopup('noliprel')" :class="{disabled: disablePatient('noliprel')}">
+		<div class="game-pharm-patient game-pharm-patient-2" @click="openPopup('game-pharm-noliprel')"
+		     :class="{disabled: disablePatient('game-pharm-noliprel')}">
 			Noliprel
+			<img class="game-pharm-animation-image game-pharm-noliprel-head" src="images/noliprel-animation/head.png"
+			     alt="Part of the patient">
+			<img class="game-pharm-animation-image game-pharm-noliprel-left-hand"
+			     src="images/noliprel-animation/left-hand.png" alt="Part of the patient">
+			<img class="game-pharm-animation-image game-pharm-noliprel-legs" src="images/noliprel-animation/legs.png"
+			     alt="Part of the patient">
+			<img class="game-pharm-animation-image game-pharm-noliprel-right-hand"
+			     src="images/noliprel-animation/right-hand.png" alt="Part of the patient">
+			<img class="game-pharm-animation-image game-pharm-noliprel-torso" src="images/noliprel-animation/torso.png"
+			     alt="Part of the patient">
 		</div>
-		<div class="patient patient-3" @click="openPopup('arifam')" :class="{disabled: disablePatient('arifam')}">
+		<div class="game-pharm-patient game-pharm-patient-3" @click="openPopup('game-pharm-arifam')"
+		     :class="{disabled: disablePatient('game-pharm-arifam')}">
 			Arifam
+			<img class="game-pharm-animation-image game-pharm-arifam-bag" src="images/arifam-animation/bag.png"
+			     alt="Part of the patient">
+			<img class="game-pharm-animation-image game-pharm-arifam-head" src="images/arifam-animation/head.png"
+			     alt="Part of the patient">
+			<img class="game-pharm-animation-image game-pharm-arifam-left-hand"
+			     src="images/arifam-animation/left-hand.png" alt="Part of the patient">
+			<img class="game-pharm-animation-image game-pharm-arifam-legs" src="images/arifam-animation/legs.png"
+			     alt="Part of the patient">
+			<img class="game-pharm-animation-image game-pharm-arifam-right-hand1"
+			     src="images/arifam-animation/right-hand1.png" alt="Part of the patient">
+			<img class="game-pharm-animation-image game-pharm-arifam-right-hand2"
+			     src="images/arifam-animation/right-hand2.png" alt="Part of the patient">
+			<img class="game-pharm-animation-image game-pharm-arifam-right-hand3"
+			     src="images/arifam-animation/right-hand3.png" alt="Part of the patient">
+			<img class="game-pharm-animation-image game-pharm-arifam-stick" src="images/arifam-animation/stick.png"
+			     alt="Part of the patient">
+			<img class="game-pharm-animation-image game-pharm-arifam-torso" src="images/arifam-animation/torso.png"
+			     alt="Part of the patient">
 		</div>
-		<div class="patient patient-4" @click="openPopup('b-prestarium')"
-		     :class="{disabled: disablePatient('b-prestarium')}">
+		<div class="game-pharm-patient game-pharm-patient-4" @click="openPopup('game-pharm-b-prestarium')"
+		     :class="{disabled: disablePatient('game-pharm-b-prestarium')}">
 			Prestarium
+			<img class="game-pharm-animation-image game-pharm-prestarium-bag" src="images/prestarium-animation/bag.png"
+			     alt="Part of the patient">
+			<img class="game-pharm-animation-image game-pharm-prestarium-head"
+			     src="images/prestarium-animation/head.png" alt="Part of the patient">
+			<img class="game-pharm-animation-image game-pharm-prestarium-left-hand"
+			     src="images/prestarium-animation/left-hand.png" alt="Part of the patient">
+			<img class="game-pharm-animation-image game-pharm-prestarium-legs"
+			     src="images/prestarium-animation/legs.png" alt="Part of the patient">
+			<img class="game-pharm-animation-image game-pharm-prestarium-right-hand1"
+			     src="images/prestarium-animation/right-hand1.png" alt="Part of the patient">
+			<img class="game-pharm-animation-image game-pharm-prestarium-right-hand2"
+			     src="images/prestarium-animation/right-hand2.png" alt="Part of the patient">
+			<img class="game-pharm-animation-image game-pharm-prestarium-torso"
+			     src="images/prestarium-animation/torso.png" alt="Part of the patient">
 		</div>
-		<div class="patient patient-5" @click="openPopup('coraxan')" :class="{disabled: disablePatient('coraxan')}">
+		<div class="game-pharm-patient game-pharm-patient-5" @click="openPopup('game-pharm-coraxan')"
+		     :class="{disabled: disablePatient('game-pharm-coraxan')}">
 			Coraxan
+			<img class="game-pharm-animation-image game-pharm-coraxan-head" src="images/coraxan-animation/head.png"
+			     alt="Part of the patient">
+			<img class="game-pharm-animation-image game-pharm-coraxan-left-hand"
+			     src="images/coraxan-animation/left-hand.png" alt="Part of the patient">
+			<img class="game-pharm-animation-image game-pharm-coraxan-left-leg"
+			     src="images/coraxan-animation/left-leg.png" alt="Part of the patient">
+			<img class="game-pharm-animation-image game-pharm-coraxan-right-hand"
+			     src="images/coraxan-animation/right-hand.png" alt="Part of the patient">
+			<img class="game-pharm-animation-image game-pharm-coraxan-right-leg"
+			     src="images/coraxan-animation/right-leg.png" alt="Part of the patient">
+			<img class="game-pharm-animation-image game-pharm-coraxan-torso" src="images/coraxan-animation/torso.png"
+			     alt="Part of the patient">
 		</div>
-		<div class="patient patient-6" @click="openPopup('prestilol')" :class="{disabled: disablePatient('prestilol')}">
+		<div class="game-pharm-patient game-pharm-patient-6" @click="openPopup('game-pharm-prestilol')"
+		     :class="{disabled: disablePatient('game-pharm-prestilol')}">
 			Prestilol
+			<img class="game-pharm-animation-image game-pharm-prestilol-head" src="images/prestilol-animation/head.png"
+			     alt="Part of the patient">
+			<img class="game-pharm-animation-image game-pharm-prestilol-left-hand"
+			     src="images/prestilol-animation/left-hand.png" alt="Part of the patient">
+			<img class="game-pharm-animation-image game-pharm-prestilol-legs" src="images/prestilol-animation/legs.png"
+			     alt="Part of the patient">
+			<img class="game-pharm-animation-image game-pharm-prestilol-right-hand"
+			     src="images/prestilol-animation/right-hand.png" alt="Part of the patient">
+			<img class="game-pharm-animation-image game-pharm-prestilol-torso"
+			     src="images/prestilol-animation/torso.png" alt="Part of the patient">
 		</div>
-		<div class="patient patient-7" @click="openPopup('triplixam')" :class="{disabled: disablePatient('triplixam')}">
+		<div class="game-pharm-patient game-pharm-patient-7" @click="openPopup('game-pharm-triplixam')"
+		     :class="{disabled: disablePatient('game-pharm-triplixam')}">
 			Triplixam
+			<img class="game-pharm-animation-image game-pharm-triplixam-hand" src="images/triplixam-animation/hand.png"
+			     alt="Part of the patient">
+			<img class="game-pharm-animation-image game-pharm-triplixam-head" src="images/triplixam-animation/head.png"
+			     alt="Part of the patient">
+			<img class="game-pharm-animation-image game-pharm-triplixam-legs" src="images/triplixam-animation/legs.png"
+			     alt="Part of the patient">
+			<img class="game-pharm-animation-image game-pharm-triplixam-phone"
+			     src="images/triplixam-animation/phone.png" alt="Part of the patient">
+			<img class="game-pharm-animation-image game-pharm-triplixam-torso"
+			     src="images/triplixam-animation/torso.png" alt="Part of the patient">
+			<img class="game-pharm-animation-image game-pharm-triplixam-finger"
+			     src="images/triplixam-animation/♂finger♂.png" alt="Part of the patient">
 		</div>
 	</div>
 
-	<div class="popup-wrapper" v-show="showPopup" :class="[{success: correctChoice},currentMedicine]">
-		<div class="popup-content"
+	<div class="game-pharm-popup-wrapper" v-show="showPopup"
+	     :class="[{'game-pharm-success': correctChoice},currentMedicine]">
+		<div class="game-pharm-popup-content"
 		     v-for="(popupContent, index) in popupContents"
 		     :key="index"
 		     v-show="currentMedicine === popupContent.dataId"
 		>
-			<div class="popup-aside-wrapper">
-				<img src="images/popup-bg.png" alt="Popup background" class="popup-background">
-				<img :src="popupContent.neutralImgSrc" alt="Sad image" class="neutral"
-				     :class="{visible: neutralMood}">
-				<img :src="popupContent.sadImgSrc" alt="Sad image" class="sad"
+			<div class="game-pharm-popup-aside-wrapper">
+				<img src="images/popup-bg.png" alt="Popup background" class="game-pharm-popup-background">
+				<img :src="popupContent.sadImgSrc" alt="Sad image" class="game-pharm-sad"
 				     :class="{visible: sadMood}">
-				<img :src="popupContent.happyImgSrc" alt="Happy image" class="happy"
+				<img :src="popupContent.happyImgSrc" alt="Happy image" class="game-pharm-happy"
 				     :class="{visible: happyMood}">
 			</div>
-			<div class="popup-patient-info-wrapper">
-				<div class="popup-header">
+			<div class="game-pharm-popup-patient-info-wrapper">
+				<div class="game-pharm-popup-header">
 					<p><b>Який із препаратів компанії Серв’є<br>Ви би призначили цьому хворому?</b></p>
 				</div>
 				<p v-html="popupContent.age"></p>
@@ -68,20 +157,20 @@
 				<p v-html="popupContent.therapy"></p>
 				<p v-html="popupContent.otherData" v-if="popupContent.otherData"></p>
 			</div>
-			<div class="popup-answer-type popup-ok" v-show="correctChoice">
-				<div class="aside-popup-wrapper">
+			<div class="game-pharm-popup-answer-type game-pharm-popup-ok" v-show="correctChoice">
+				<div class="game-pharm-aside-popup-wrapper">
 					<img src="images/ok.png" alt="Correct choice icon">
 				</div>
 				<p v-html="popupContent.foundation"></p>
 			</div>
-			<div class="popup-answer-type popup-no" v-show="wrongChoice">
-				<div class="aside-popup-wrapper">
+			<div class="game-pharm-popup-answer-type game-pharm-popup-no" v-show="wrongChoice">
+				<div class="game-pharm-aside-popup-wrapper">
 					<img src="images/no.png" alt="Wrong choice icon">
 				</div>
 				<p>Спробуйте ще</p>
 			</div>
 		</div>
-		<div class="close-button" @click="closePopup()"></div>
+		<div class="game-pharm-close-button" @click="closePopup()"></div>
 		<!-- Swiper -->
 		<div class="swiper-container">
 			<div class="swiper-wrapper">
@@ -90,7 +179,7 @@
 				     :key="index"
 				     :class="[{active: item.active}, item.dataId]"
 				     @click="toggleActiveState(index)">
-					<div class="shadow-wrapper">
+					<div class="game-pharm-shadow-wrapper">
 						<p v-html="item.name"></p>
 						<img :src="item.src" :alt="item.name">
 					</div>
@@ -113,8 +202,7 @@
                 showPopup: false,
                 correctChoice: false,
                 wrongChoice: false,
-                neutralMood: true,
-                sadMood: false,
+                sadMood: true,
                 happyMood: false,
                 removeId: null,
                 currentMedicine: "",
@@ -124,51 +212,50 @@
                         name: "Престилол<sup>®</sup>",
                         active: false,
                         src: "images/1.png",
-                        dataId: "prestilol"
+                        dataId: "game-pharm-prestilol"
                     },
                     {
                         name: "Ноліпрел<sup>®</sup>",
                         active: false,
                         src: "images/2.png",
-                        dataId: "noliprel"
+                        dataId: "game-pharm-noliprel"
                     },
                     {
                         name: "Трипліксам<sup>®</sup>",
                         active: false,
                         src: "images/3.png",
-                        dataId: "triplixam"
+                        dataId: "game-pharm-triplixam"
                     },
                     {
                         name: "Арифам<sup>®</sup>",
                         active: false,
                         src: "images/4.png",
-                        dataId: "arifam"
+                        dataId: "game-pharm-arifam"
                     },
                     {
                         name: "Предуктал ОД 80 мг<sup>®</sup>",
                         active: false,
                         src: "images/7.png",
-                        dataId: "preductal"
+                        dataId: "game-pharm-preductal"
                     },
                     {
                         name: "Кораксан<sup>®</sup>",
                         active: false,
                         src: "images/5.png",
-                        dataId: "coraxan"
+                        dataId: "game-pharm-coraxan"
                     },
                     {
                         name: "Бі-Престаріум<sup>®</sup>",
                         active: false,
                         src: "images/6.png",
-                        dataId: "b-prestarium"
+                        dataId: "game-pharm-b-prestarium"
                     }
                 ],
                 popupContents: [
                     {
-                        dataId: "prestilol",
-                        sadImgSrc: "images/2.png",
-                        happyImgSrc: "images/2.png",
-                        neutralImgSrc: "images/2.png",
+                        dataId: "game-pharm-prestilol",
+                        sadImgSrc: "images/prestilol-sad.png",
+                        happyImgSrc: "images/prestilol-happy.png",
                         age: "<b>Вік:</b> 52 роки",
                         arterialPressure: "<b>АТ:</b> 160/95",
                         diagnosis: "<b>Діагноз:</b> Артеріальна гіпертензія, ішемічна хвороба серця",
@@ -177,22 +264,20 @@
                         foundation: "1. Застосування двох антигіпертензивних препаратів в одній таблетці покращує прихильність і підвищує рівень контролю АТ. (Європейські рекомендації 2018: ESC/ESH Guidelines for the management of arterial hypertension (European Heart Journal (2018) 39, 3021–3104) розділ 7.5, пункт 2.4, ст. 3063.<br>2. Призначення фіксованої комбінації бісопрололу і периндоприлу пацієнтам, які в складі попередньої терапії приймали бісопролол та іАПФ, але не досягли рекомендованих рівнів частоти скорочень серця та артеріального тиску, сприяло ефективному зниженню частоти скорочень серця і артеріального тиску, досягненню цільових рівнів через 1 місяць. (Лутай М.І.// Ефективність лікування пацієнтів зі стабільною ішемічною хворобою серця та супутньою артеріальною гіпертензією: результати багатоцентрового дослідження ПРЕСТОЛ. УКЖ, том 26, № 1, 2019.)",
                     },
                     {
-                        dataId: "noliprel",
+                        dataId: "game-pharm-noliprel",
                         sadImgSrc: "images/noliprel-sad.png",
                         happyImgSrc: "images/noliprel-happy.png",
-                        neutralImgSrc: "images/noliprel-neutral.png",
                         age: "<b>Вік:</b> 57 років",
                         arterialPressure: "<b>АТ:</b> 160/100",
                         diagnosis: "<b>Діагноз:</b> Артеріальна гіпертензія і ожиріння",
                         therapy: "<b>Терапія:</b> монотерапія іАПФ",
                         otherData: "<b>Інші дані:</b> ІМТ - 33,2 кг/м<sup>2</sup>",
-                        foundation: "Ноліпрел Бі-форте — саме такий вибір зробили лікарі у дослідженні FOSAGE (Glezer M.G. Antihypertensive Effectiveness of Perindopril Arginine and Indapamide Single-Pill Combination According to Body Mass Index: Findings from the FORSAGE Study//Cardiol Ther (2020) 9:139–152 <a href='https://doi.org/10.1007/s40119-020-00162-x)'>https://doi.org/10.1007/s40119-020-00162-x)</a>. це призвело до значного зниження АТ вже на 2-му тижні лікування — на 23,1/10,9 у пациєнтів з АГ та ожирінням. За 3 місяці АТ у паціентіз в АГ та ожирінням (ІМТ> 30 кг/м2) знизився на 39,4/18,7 мм рт ст і 78% таких пацієнтів досягли нормалізації АТ з Ноліпрелом Бі-форте"
+                        foundation: "Ноліпрел Бі-форте — саме такий вибір зробили лікарі у дослідженні FOSAGE (Glezer M.G. Antihypertensive Effectiveness of Perindopril Arginine and Indapamide Single-Pill Combination According to Body Mass Index: Findings from the FORSAGE Study//Cardiol Ther (2020) 9:139–152 <a href='https://doi.org/10.1007/s40119-020-00162-x)'>https://doi.org/10.1007/s40119-020-00162-x)</a>. це призвело до значного зниження АТ вже на 2-му тижні лікування — на 23,1/10,9 у пациєнтів з АГ та ожирінням. За 3 місяці АТ у паціентіз в АГ та ожирінням (ІМТ> 30 кг/м<sup>2</sup>) знизився на 39,4/18,7 мм рт ст і 78% таких пацієнтів досягли нормалізації АТ з Ноліпрелом Бі-форте"
                     },
                     {
-                        dataId: "triplixam",
-                        sadImgSrc: "images/2.png",
-                        happyImgSrc: "images/2.png",
-                        neutralImgSrc: "images/2.png",
+                        dataId: "game-pharm-triplixam",
+                        sadImgSrc: "images/triplixam-sad.png",
+                        happyImgSrc: "images/triplixam-happy.png",
                         age: "<b>Вік:</b> 69 років",
                         arterialPressure: "<b>АТ:</b> 170/180",
                         diagnosis: "<b>Діагноз:</b> Артеріальна гіпертензія",
@@ -200,10 +285,9 @@
                         foundation: "Потрійна комбінація іАПФ + БКК + діуретик в одній таблетці  пацієнту з неускладненою гіпертензією і АТ>140/90, який перебуває на подвійній антигіпертензивній комбінації, є наступним кроком в терапії згідно Європейських рекомендацій 2018: ESC/ESH Guidelines for the management of arterial hypertension (European Heart Journal (2018) 39, 3021–3104)."
                     },
                     {
-                        dataId: "arifam",
-                        sadImgSrc: "images/2.png",
-                        happyImgSrc: "images/2.png",
-                        neutralImgSrc: "images/2.png",
+                        dataId: "game-pharm-arifam",
+                        sadImgSrc: "images/arifam-sad.png",
+                        happyImgSrc: "images/arifam-happy.png",
                         age: "<b>Вік:</b> 65 років",
                         arterialPressure: "<b>АТ:</b> 165/95",
                         diagnosis: "<b>Діагноз:</b> Артеріальна гіпертензія",
@@ -211,10 +295,9 @@
                         foundation: "Подвійна комбінація БКК і тіазидоподібного діуретика рекомендована пацієнтам старше 55 років Британськими рекомендаціями з лікування АГ — NICE 2019 (National Institute for Health and Care Excellence. Hypertension in adults: diagnosis and management. NICE Guideline 136. August, 2019)"
                     },
                     {
-                        dataId: "preductal",
-                        sadImgSrc: "images/noliprel-sad.png",
-                        happyImgSrc: "images/noliprel-happy.png",
-                        neutralImgSrc: "images/noliprel-neutral.png",
+                        dataId: "game-pharm-preductal",
+                        sadImgSrc: "images/preductal-sad.png",
+                        happyImgSrc: "images/preductal-happy.png",
                         age: "<b>Вік:</b> 55 років",
                         arterialPressure: "<b>АТ:</b> 120/90",
                         diagnosis: "<b>Діагноз:</b> ІХС, стенокардія.",
@@ -223,10 +306,9 @@
                         foundation: "В лікуванні ІХС, а точніше, за новими рекомендаціями Європейського товариства кардіологів 2019 року, — хронічного коронарного синдрому, не існує універсального визначення оптимальної терапії у пацієнтів з хронічним коронарним синдромом, препарати повинні бути підібрані індивідуально для кожного пацієнта, залежно від його профілю та побажань. Для пацієнта наступним кроком може бути призначення триметазидину. 2019 ESC Guidelines for the diagnosis and management of chronic coronary syndromes European Heart Journal (2019) 00, 171. Представлена таблиця та цитати із рекомендацій. doi: 10.1093/eurheartj/ehz425.",
                     },
                     {
-                        dataId: "coraxan",
-                        sadImgSrc: "images/2.png",
-                        happyImgSrc: "images/2.png",
-                        neutralImgSrc: "images/2.png",
+                        dataId: "game-pharm-coraxan",
+                        sadImgSrc: "images/coraxan-sad.png",
+                        happyImgSrc: "images/coraxan-happy.png",
                         age: "<b>Вік:</b> 60 років",
                         arterialPressure: "<b>АТ:</b> 110/70",
                         diagnosis: "<b>Діагноз:</b> ІХС, СН",
@@ -235,10 +317,9 @@
                         foundation: "В лікуванні ІХС, а точніше, за новими рекомендаціями Європейського товариства кардіологів 2019 року,  - хронічного коронарного синдрому для пацієнта із супутньою та СН, до бета-блокаторів рекомендовано додати івабрадин. 2019 ESC Guidelines for the diagnosis and management of chronic coronary syndromes European Heart Journal (2019) 00, 171. Представлена таблиця та цитати із рекомендацій. doi:10.1093/eurheartj/ehz425. page 434",
                     },
                     {
-                        dataId: "b-prestarium",
-                        sadImgSrc: "images/2.png",
-                        happyImgSrc: "images/2.png",
-                        neutralImgSrc: "images/2.png",
+                        dataId: "game-pharm-b-prestarium",
+                        sadImgSrc: "images/prestarium-sad.png",
+                        happyImgSrc: "images/prestarium-happy.png",
                         age: "<b>Вік:</b> 55 років",
                         arterialPressure: "<b>АТ:</b> 165/100",
                         diagnosis: "<b>Діагноз:</b> Артеріальна гіпертензія",
@@ -257,16 +338,13 @@
                         if (thumb.dataId === this.currentMedicine) {
                             this.correctChoice = true;
                             this.happyMood = true;
-                            this.neutralMood = false;
                             this.sadMood = false;
-                            this.wrongChoice = false;
                             this.removeId = id;
                         } else {
                             this.happyMood = false;
-                            this.neutralMood = false;
                             this.sadMood = true;
                             this.correctChoice = false;
-                            this.wrongChoice = true;
+                            this.wrongChoice = thumb.active;
                         }
                     } else {
                         thumb.active = false;
@@ -295,8 +373,7 @@
                 this.correctChoice = false;
                 this.wrongChoice = false;
                 this.happyMood = false;
-                this.sadMood = false;
-                this.neutralMood = true;
+                this.sadMood = true;
             }
         },
     }).mount('.game-pharm-section');

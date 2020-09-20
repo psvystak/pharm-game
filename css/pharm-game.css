@@ -1,4 +1,5 @@
 @import "fonts.css";
+@import "animations.css";
 
 html, body {
 	position: relative;
@@ -32,20 +33,20 @@ p, h2 {
 	font-weight: 300;
 }
 
-.patient-choice-wrapper p {
+.game-pharm-patient-choice-wrapper p {
 	color: #0071ba;
 	text-align: center;
 	font-size: 32px;
 	letter-spacing: 1.4px;
 }
 
-.game-pharm-section .sub-header {
+.game-pharm-section .game-pharm-sub-header {
 	text-align: center;
 	margin-top: 13px;
 	font: 300 18px/29px Roboto;
 }
 
-.patient-choice-wrapper {
+.game-pharm-patient-choice-wrapper {
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -57,11 +58,11 @@ p, h2 {
 	border-left: 2px solid #ffffff;
 }
 
-.patients-wrapper {
+.game-pharm-patients-wrapper {
 	display: flex;
 }
 
-.popup-wrapper {
+.game-pharm-popup-wrapper {
 	width: 98%;
 	height: 97.4vh;
 	position: fixed;
@@ -71,7 +72,7 @@ p, h2 {
 	box-shadow: 1px -1px 15px 0px rgba(0, 0, 0, 0.40);
 }
 
-.close-button {
+.game-pharm-close-button {
 	position: absolute;
 	top: 19px;
 	right: 20%;
@@ -80,44 +81,45 @@ p, h2 {
 	background: url("../images/close.png") no-repeat center/contain;
 }
 
-.patient {
+.game-pharm-patient {
+	position: relative;
 	height: 100%;
 	background: #ffffff;
 }
 
-.patient.disabled {
+.game-pharm-patient.disabled {
 	pointer-events: none;
 	filter: grayscale(1);
 }
 
-.patient-1 {
+.game-pharm-patient-1 {
 	width: 175px;
 }
 
-.patient-2 {
+.game-pharm-patient-2 {
 	width: 222px;
 }
 
-.patient-3 {
+.game-pharm-patient-3 {
 	width: 149px;
 }
 
-.patient-4 {
+.game-pharm-patient-4 {
 	width: 122px;
 	margin-left: 10px;
 }
 
-.patient-5 {
+.game-pharm-patient-5 {
 	width: 129px;
 	margin-left: 12px;
 }
 
-.patient-6 {
+.game-pharm-patient-6 {
 	width: 180px;
 	margin-left: 4px;
 }
 
-.patient-7 {
+.game-pharm-patient-7 {
 	width: 10px;
 	width: 144px;
 	margin-left: 13px;
@@ -132,7 +134,7 @@ p, h2 {
 	height: 23%;
 }
 
-.swiper-slide .shadow-wrapper {
+.swiper-slide .game-pharm-shadow-wrapper {
 	padding-top: 26px;
 	transition: 0.2s box-shadow linear;
 	box-sizing: border-box;
@@ -140,18 +142,18 @@ p, h2 {
 	height: 100%;
 }
 
-.shadow-wrapper p {
+.game-pharm-shadow-wrapper p {
 	transition: 0.2s linear;
 	font-family: Roboto, sans-serif;
 	font-weight: bold;
 }
 
-.swiper-slide.active .shadow-wrapper p {
+.swiper-slide.active .game-pharm-shadow-wrapper p {
 	color: #0067aa;
 	transform: translateY(-17px);
 }
 
-.swiper-slide.active .shadow-wrapper {
+.swiper-slide.active .game-pharm-shadow-wrapper {
 	padding-top: 21px;
 	border-top: 5px #0067aa solid;
 	box-shadow: 0 -1px 5px 0 rgba(108, 199, 222, 0.7);
@@ -179,68 +181,63 @@ p, h2 {
 	top: 56%;
 }
 
-.swiper-slide.prestilol img {
+.swiper-slide.game-pharm-prestilol img {
 	margin-top: 3%;
 	width: 240px;
 }
 
-.swiper-slide.noliprel img {
+.swiper-slide.game-pharm-noliprel img {
 	width: 248px;
 	margin-top: 2%;
 }
 
-.swiper-slide.triplixam img {
+.swiper-slide.game-pharm-triplixam img {
 	margin-top: 8%;
 	width: 258px;
 }
 
-.swiper-slide.arifam img {
+.swiper-slide.game-pharm-arifam img {
 	margin-top: 4%;
 	width: 75%;
 }
 
-.swiper-slide.b-prestarium img {
+.swiper-slide.game-pharm-b-prestarium img {
 	margin-top: 12%;
 	width: 277px;
 }
 
-.swiper-slide.preductal img {
+.swiper-slide.game-pharm-preductal img {
 	margin-top: 2%;
 	margin-left: 7%;
 	width: 222px;
 }
 
-.swiper-slide.coraxan img {
+.swiper-slide.game-pharm-coraxan img {
 	margin-top: 2%;
 	margin-right: 7%;
 	width: 194px;
 }
 
-.patients-wrapper {
+.game-pharm-patients-wrapper {
 	width: 1160px;
 	height: 382px;
 	margin: 43px auto 0;
 }
 
-.popup-wrapper {
-}
-
-.close-button {
-}
-
-.popup-content {
+.game-pharm-popup-content {
 	width: 80%;
 	height: 79%;
 	display: flex;
 }
 
-.popup-aside-wrapper {
+.game-pharm-popup-aside-wrapper {
 	width: 54.5%;
 	background: #6bc7de;
 	position: relative;
+	overflow: hidden;
 }
 
-.popup-aside-wrapper .popup-background {
+.game-pharm-popup-aside-wrapper .game-pharm-popup-background {
 	position: absolute;
 	opacity: 1;
 	top: 91px;
@@ -248,22 +245,22 @@ p, h2 {
 	right: 0;
 }
 
-.popup-patient-info-wrapper {
+.game-pharm-popup-patient-info-wrapper {
 	width: 45.5%;
 }
 
-.popup-patient-info-wrapper > p {
+.game-pharm-popup-patient-info-wrapper > p {
 	color: #000000;
 	margin-left: 64px;
 	font: 300 26px/30px HelveticaNeueCyr, sans-serif;
 	margin-bottom: 33px;
 }
 
-.popup-patient-info-wrapper > p b {
+.game-pharm-popup-patient-info-wrapper > p b {
 	color: #909090;
 }
 
-.popup-header {
+.game-pharm-popup-header {
 	margin: 67px 0 40px;
 	background: #6bc7de;
 	display: flex;
@@ -273,30 +270,29 @@ p, h2 {
 	padding-left: 58px;
 }
 
-.popup-aside-wrapper img {
+.game-pharm-popup-aside-wrapper img {
 	opacity: 0;
 	transition: 0.2s linear;
 }
 
-.popup-aside-wrapper img.visible {
+.game-pharm-popup-aside-wrapper img.visible {
 	opacity: 1;
 }
 
-.popup-aside-wrapper img:not(:first-of-type) {
+.game-pharm-popup-aside-wrapper img:not(:first-of-type) {
 	position: absolute;
 	top: 136px;
 	right: 4%;
-	width: 50.5%;
 	width: auto;
 	max-height: 54vh;
 }
 
-.popup-header p {
+.game-pharm-popup-header p {
 	color: #ffffff;
 	font: 300 1.7vw/40px HelveticaNeueCyr, sans-serif;
 }
 
-.popup-answer-type {
+.game-pharm-popup-answer-type {
 	position: absolute;
 	top: 61%;
 	left: 34%;
@@ -305,63 +301,65 @@ p, h2 {
 	height: 9.3%;
 	background: #ffffff;
 	border: 1px solid #de81a2;
-	box-shadow: 6px 0px 16px 1px rgb(142 143 144 / 0.4);
+	box-shadow: 6px 0px 16px 1px rgba(142, 143, 144, 0.4);
 }
 
-.aside-popup-wrapper {
+.game-pharm-aside-popup-wrapper img {
+	max-height: 100%;
+}
+
+.game-pharm-aside-popup-wrapper {
 	width: 104px;
 	background: #de81a2;
 	display: flex;
-	align-items: flex-start;
+	align-items: center;
 	justify-content: center;
 	box-sizing: border-box;
-	padding-top: 21px;
+	padding: 2% 0;
 }
 
-.popup-answer-type p {
+.game-pharm-popup-answer-type p {
 	width: calc(100% - 104px);
 	color: #de81a2;
 	font-size: 27px;
 }
 
-.popup-answer-type.popup-no p {
+.game-pharm-popup-answer-type a {
+	color: #39c3e6;
+}
+
+.game-pharm-popup-answer-type.game-pharm-popup-no p {
 	display: flex;
 	align-items: center;
 	justify-content: center;
 }
 
-.popup-answer-type.popup-ok {
-
-	top: 52%;
-
-	transform: translateY(-33%);
-
+.game-pharm-popup-answer-type.game-pharm-popup-ok {
+	top: auto;
+	bottom: 20%;
+	transform: translateY(-20%);
 	left: 23.5%;
-
 	width: 50.3%;
-
 	height: auto;
-
 	background: #ffffff;
-
-	border: 1px solid #de81a2;
+	border: 1px solid #09b8a0;
 }
 
-.popup-answer-type.popup-ok p {
+.game-pharm-popup-answer-type.game-pharm-popup-ok p {
 	box-sizing: border-box;
 	padding: 30px;
 	font-size: 1vw;
 	line-height: 2.7vh;
+	color: #09b8a0;
 }
 
-.popup-ok .aside-popup-wrapper {
-
+.game-pharm-popup-ok .game-pharm-aside-popup-wrapper {
+	background: #09b8a0;
+	padding-top: 21px;
+	align-items: flex-start;
 }
 
-.noliprel .popup-aside-wrapper .happy { /* left: 374px; */
-}
-
-.choiche-type-popup {
+.game-pharm-choiche-type-popup {
 	position: absolute;
 	top: 61.1%;
 	left: 34%;
@@ -371,36 +369,35 @@ p, h2 {
 	border: 1px solid purple;
 }
 
-.success .swiper-slide {
+.game-pharm-success .swiper-slide {
 	pointer-events: none;
 }
 
 @media screen and (max-width: 1280px) and (orientation: landscape) {
-	.swiper-slide.prestilol img,
-	.swiper-slide.noliprel img,
-	.swiper-slide.arifam img {
+	.swiper-slide.game-pharm-prestilol img,
+	.swiper-slide.game-pharm-noliprel img,
+	.swiper-slide.game-pharm-arifam img {
 		width: 50%;
 		margin-top: 6%;
 	}
 
-	.swiper-slide.b-prestarium img {
-width: 76%;
-margin-top: 8%;
-}
+	.swiper-slide.game-pharm-b-prestarium img {
+		width: 76%;
+		margin-top: 8%;
+	}
 
-	.swiper-slide.coraxan img {
+	.swiper-slide.game-pharm-coraxan img {
 		width: 48%;
 		margin-top: 2%;
 	}
 
-	.swiper-slide.preductal img {
+	.swiper-slide.game-pharm-preductal img {
 		margin-left: 4%;
 		width: 57%;
 	}
 
-	.swiper-slide.triplixam img {
+	.swiper-slide.game-pharm-triplixam img {
 		margin-top: 7%;
 		width: 66%;
 	}
 }
-
