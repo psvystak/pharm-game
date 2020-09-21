@@ -126,7 +126,6 @@ Vue.createApp({
                     arterialPressure: "<b>АТ:</b> 165/100",
                     diagnosis: "<b>Діагноз:</b> Артеріальна гіпертензія",
                     therapy: "<b>Терапія:</b> валсартан 160 мг 1 раз на добу",
-                    otherData: "<b>Інші дані:</b>",
                     foundation: "Згідно з рекомендаціями міжнародного товариства АГ ISH 2020, першим і другим кроком оптимальної  медикаментозної схеми лікування артеріальної гіпертензії є саме подвійна комбінація іРААС+ дигідроперидиновий БКК (2020 ISH Global Hypertension Practice Guidelines-Hypertension. 2020; 75:1334-1357.)",
                 }
             ]
@@ -190,7 +189,9 @@ let swiper = new Swiper('.swiper-container', {
         prevEl: '.swiper-button-prev',
     },
     breakpoints: {
-        // when window width is >= 320px,
+        320: {
+            slidesPerView: 2
+        },
         1024: {
             slidesPerView: 2
         },

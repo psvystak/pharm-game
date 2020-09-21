@@ -76,13 +76,47 @@ p, h2 {
 .game-pharm-close-button {
 	cursor: pointer;
 	position: absolute;
-	top: 19px;
+	top: 1.2vw;
 	right: 20%;
-	width: 29px;
-	height: 29px;
+	width: 2.3vw;
+	height: 2.3vw;
 	background: url("../images/close.png") no-repeat center/contain;
 }
-
+.game-pharm-preductal-happy{
+	top: 34px;
+	left: -3px;
+	width: 189px;
+}
+.game-pharm-noliprel-happy{
+	top: 72px;
+	left: 6px;
+	width: 218px;
+}
+.game-pharm-arifam-happy{
+	top: 54px;
+	left: 7px;
+	width: 136px;
+}
+.game-pharm-prestarium-happy{
+	top: 19px;
+	left: 6px;
+	width: 111px;
+}
+.game-pharm-coraxan-happy{
+	top: 57px;
+	left: 6px;
+	width: 121px;
+}
+.game-pharm-prestilol-happy{
+	top: 55px;
+	left: 3px;
+	width: 200px;
+}
+.game-pharm-triplixam-happy{
+	top: 12px;
+	left: 4px;
+	width: 149px;
+}
 .game-pharm-patient {
 	position: relative;
 	cursor: pointer;
@@ -92,7 +126,10 @@ p, h2 {
 
 .game-pharm-patient.disabled {
 	pointer-events: none;
-	filter: grayscale(1);
+}
+
+.game-pharm-patient.disabled .game-pharm-hide-image {
+	display: none;
 }
 
 .game-pharm-patient.disabled * {
@@ -154,6 +191,7 @@ p, h2 {
 	transition: 0.2s linear;
 	font-family: Roboto, sans-serif;
 	font-weight: bold;
+	font-size: 1.4vw;
 }
 
 .swiper-slide.active .game-pharm-shadow-wrapper p,
@@ -193,39 +231,39 @@ p, h2 {
 
 .swiper-slide.game-pharm-prestilol img {
 	margin-top: 3%;
-	width: 240px;
+	max-height: 70%;
 }
 
 .swiper-slide.game-pharm-noliprel img {
-	width: 248px;
 	margin-top: 2%;
+	max-height: 70%;
 }
 
 .swiper-slide.game-pharm-triplixam img {
 	margin-top: 8%;
-	width: 258px;
+	max-height: 52%;
 }
 
 .swiper-slide.game-pharm-arifam img {
 	margin-top: 4%;
-	width: 75%;
+	max-height: 60%;
 }
 
 .swiper-slide.game-pharm-b-prestarium img {
-	margin-top: 12%;
-	width: 277px;
+	margin-top: 5%;
+	max-height: 44%;
 }
 
 .swiper-slide.game-pharm-preductal img {
 	margin-top: 2%;
 	margin-left: 7%;
-	width: 222px;
+	max-height: 70%;
 }
 
 .swiper-slide.game-pharm-coraxan img {
 	margin-top: 2%;
 	margin-right: 7%;
-	width: 194px;
+	height: 70%;
 }
 
 .game-pharm-patients-wrapper {
@@ -261,9 +299,9 @@ p, h2 {
 
 .game-pharm-popup-patient-info-wrapper > p {
 	color: #000000;
-	margin-left: 64px;
-	font: 300 26px/30px HelveticaNeueCyr, sans-serif;
-	margin-bottom: 33px;
+	margin-left: 4vw;
+	font: 300 1.5vw/3.2vh HelveticaNeueCyr, sans-serif;
+	margin-bottom: 4.3vh;
 }
 
 .game-pharm-popup-patient-info-wrapper > p b {
@@ -271,13 +309,13 @@ p, h2 {
 }
 
 .game-pharm-popup-header {
-	margin: 67px 0 40px;
+	margin: 9vh 0vw 4vh 0vw;
 	background: #6bc7de;
 	display: flex;
 	align-items: center;
-	height: 103px;
+	height: 13vh;
 	box-sizing: border-box;
-	padding-left: 58px;
+	padding-left: 4vw;
 }
 
 .game-pharm-popup-aside-wrapper img {
@@ -291,7 +329,7 @@ p, h2 {
 
 .game-pharm-popup-aside-wrapper img:not(:first-of-type) {
 	position: absolute;
-	top: 136px;
+	top: 18vh;
 	right: 4%;
 	width: auto;
 	max-height: 54vh;
@@ -299,7 +337,7 @@ p, h2 {
 
 .game-pharm-popup-header p {
 	color: #ffffff;
-	font: 300 1.7vw/40px HelveticaNeueCyr, sans-serif;
+	font: 300 1.7vw/5vh HelveticaNeueCyr, sans-serif;
 }
 
 .game-pharm-popup-answer-type {
@@ -387,35 +425,35 @@ p, h2 {
 	.swiper-slide.game-pharm-prestilol img,
 	.swiper-slide.game-pharm-noliprel img,
 	.swiper-slide.game-pharm-arifam img {
-		width: 50%;
-		margin-top: 6%;
+		width: 48%;
+		margin-top: 1%;
 	}
 
-	.game-pharm-patients-wrapper{
+	.game-pharm-patients-wrapper {
 		justify-content: space-between;
 	}
 
-	.game-pharm-patient{
+	.game-pharm-patient {
 		margin-left: 0;
 	}
 
 	.swiper-slide.game-pharm-b-prestarium img {
-		width: 76%;
-		margin-top: 8%;
+		width: 68%;
+		margin-top: 4%;
 	}
 
 	.swiper-slide.game-pharm-coraxan img {
-		width: 48%;
+		width: 35%;
 		margin-top: 2%;
 	}
 
 	.swiper-slide.game-pharm-preductal img {
 		margin-left: 4%;
-		width: 57%;
+		width: 45%;
 	}
 
 	.swiper-slide.game-pharm-triplixam img {
-		margin-top: 7%;
+		margin-top: 3%;
 		width: 66%;
 	}
 }
@@ -425,14 +463,72 @@ p, h2 {
 		width: 60%;
 	}
 
-	.game-pharm-patients-wrapper{
+	.game-pharm-patients-wrapper {
 		justify-content: center;
 	}
 
-	.game-pharm-patient{
+	.game-pharm-patient {
 		margin-left: 0;
 	}
+
 	.game-pharm-section h2 {
 		font-size: 11vw;
+	}
+
+	.game-pharm-popup-aside-wrapper img:not(:first-of-type) {
+		max-height: 33vh;
+	}
+
+	.swiper-slide.game-pharm-noliprel img {
+		width: 23vw;
+		margin-top: 16%;
+	}
+
+	.swiper-slide.game-pharm-prestilol img {
+		margin-top: 15%;
+		width: 22.5vw;
+	}
+
+	.swiper-slide.game-pharm-triplixam img {
+		margin-top: 20%;
+		width: 24.3vw;
+	}
+
+	.swiper-slide.game-pharm-arifam img {
+		margin-top: 14%;
+		width: 22.9vw;
+	}
+
+	.swiper-slide.game-pharm-preductal img {
+		margin-top: 16%;
+		margin-left: 7%;
+		width: 21.6vw;
+	}
+
+	.swiper-slide.game-pharm-coraxan img {
+		margin-top: 15%;
+		margin-right: 7%;
+		width: 20.1vw;
+	}
+
+	.swiper-slide.game-pharm-b-prestarium img {
+		margin-top: 25%;
+		width: 24.4vw;
+	}
+
+	.game-pharm-popup-answer-type.game-pharm-popup-no p {
+		font-size: 2vw;
+	}
+
+	.game-pharm-aside-popup-wrapper {
+	}
+
+	.game-pharm-popup-answer-type {
+		position: absolute;
+		top: 61%;
+		left: 50%;
+		transform: translateX(-50%);
+		display: flex;
+		width: 65vw;
 	}
 }
