@@ -162,6 +162,7 @@ Vue.createApp({
             this.showPopup = true;
             setTimeout(function () {
                 swiper.update();
+                swiper.slideTo(0);
             })
         },
         closePopup() {
@@ -180,6 +181,7 @@ Vue.createApp({
         }
     },
 }).mount('.game-pharm-section');
+
 let swiper = new Swiper('.swiper-container', {
     slidesPerView: 4,
     observeSlideChildren: true,

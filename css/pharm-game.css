@@ -70,7 +70,7 @@ p, h2 {
 	top: 1.3vh;
 	left: 2.2%;
 	background: linear-gradient(0deg, rgba(243, 243, 243, 1) 21%, rgba(255, 255, 255, 1) 21%, rgba(255, 255, 255, 1) 100%);
-	box-shadow: 1px -1px 15px 0px rgba(0, 0, 0, 0.40);
+	box-shadow: 1px -1px 15px 0 rgba(0, 0, 0, 0.40);
 }
 
 .game-pharm-close-button {
@@ -128,7 +128,6 @@ p, h2 {
 }
 
 .game-pharm-patient-7 {
-	width: 10px;
 	width: 144px;
 	margin-left: 13px;
 }
@@ -143,6 +142,7 @@ p, h2 {
 }
 
 .swiper-slide .game-pharm-shadow-wrapper {
+	cursor: pointer;
 	padding-top: 26px;
 	transition: 0.2s box-shadow linear;
 	box-sizing: border-box;
@@ -156,12 +156,14 @@ p, h2 {
 	font-weight: bold;
 }
 
-.swiper-slide.active .game-pharm-shadow-wrapper p {
+.swiper-slide.active .game-pharm-shadow-wrapper p,
+.swiper-slide:hover .game-pharm-shadow-wrapper p {
 	color: #0067aa;
 	transform: translateY(-17px);
 }
 
-.swiper-slide.active .game-pharm-shadow-wrapper {
+.swiper-slide.active .game-pharm-shadow-wrapper,
+.swiper-slide:hover .game-pharm-shadow-wrapper {
 	padding-top: 21px;
 	border-top: 5px #0067aa solid;
 	box-shadow: 0 -1px 5px 0 rgba(108, 199, 222, 0.7);
@@ -309,7 +311,7 @@ p, h2 {
 	height: 9.3%;
 	background: #ffffff;
 	border: 1px solid #de81a2;
-	box-shadow: 6px 0px 16px 1px rgba(142, 143, 144, 0.4);
+	box-shadow: 6px 0 16px 1px rgba(142, 143, 144, 0.4);
 }
 
 .game-pharm-aside-popup-wrapper img {

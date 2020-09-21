@@ -312,7 +312,7 @@
 }
 
 .game-pharm-prestarium-right-hand1 {
-	top: 0px;
+	top: 0;
 	left: 0;
 	width: 50px;
 }
@@ -843,18 +843,6 @@
 }
 
 
-@keyframes game-pharm-prestilol-legs {
-	from {
-
-	}
-	50% {
-
-	}
-	to {
-
-	}
-}
-
 @keyframes game-pharm-prestilol-right-hand {
 	from {
 		transform: rotate(0deg);
@@ -888,30 +876,6 @@
 	}
 	to {
 		transform: rotate(-7deg);
-	}
-}
-
-@keyframes game-pharm-prestilol-torso {
-	from {
-
-	}
-	50% {
-
-	}
-	to {
-
-	}
-}
-
-@keyframes game-pharm-triplixam-hand {
-	from {
-
-	}
-	50% {
-
-	}
-	to {
-
 	}
 }
 
