@@ -157,6 +157,7 @@ Vue.createApp({
             return !!~this.disabledPatients.indexOf(medicine)
         },
         openPopup(medicine) {
+            document.body.classList.add("disable-scroll");
             this.currentMedicine = medicine;
             this.showPopup = true;
             setTimeout(function () {
@@ -165,6 +166,7 @@ Vue.createApp({
             })
         },
         closePopup() {
+            document.body.classList.remove("disable-scroll");
             this.showPopup = false;
             this.thumbs.forEach((thumb) => {
                 thumb.active = false;
@@ -189,10 +191,10 @@ let swiper = new Swiper('.swiper-container', {
         prevEl: '.swiper-button-prev',
     },
     breakpoints: {
-        320: {
-            slidesPerView: 2
+        280: {
+            slidesPerView: 1
         },
-        1024: {
+        480: {
             slidesPerView: 2
         },
         1250: {
