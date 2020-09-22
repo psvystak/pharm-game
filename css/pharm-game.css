@@ -183,7 +183,7 @@ p, h2 {
 	margin-left: 13px;
 }
 
-.swiper-container {
+.game-pharm-swiper-container {
 	position: absolute;
 	left: 51.3%;
 	transform: translateX(-53.8%);
@@ -192,7 +192,7 @@ p, h2 {
 	height: 23%;
 }
 
-.swiper-slide .game-pharm-shadow-wrapper {
+.game-pharm-swiper-slide .game-pharm-shadow-wrapper {
 	cursor: pointer;
 	padding-top: 26px;
 	transition: 0.2s box-shadow linear;
@@ -212,21 +212,21 @@ p, h2 {
 	transform: translateX(-50%);
 }
 
-.swiper-slide.active .game-pharm-shadow-wrapper p,
-.swiper-slide:hover .game-pharm-shadow-wrapper p {
+.game-pharm-swiper-slide.active .game-pharm-shadow-wrapper p,
+.game-pharm-swiper-slide:hover .game-pharm-shadow-wrapper p {
 	color: #0067aa;
 	transform: translateX(-50%) translateY(-37%);
 }
 
-.swiper-slide.active .game-pharm-shadow-wrapper,
-.swiper-slide:hover .game-pharm-shadow-wrapper {
+.game-pharm-swiper-slide.active .game-pharm-shadow-wrapper,
+.game-pharm-swiper-slide:hover .game-pharm-shadow-wrapper {
 	padding-top: 21px;
 	border-top: 5px #0067aa solid;
 	box-shadow: 0 -1px 5px 0 rgba(108, 199, 222, 0.7);
 	background: #f3f3f3;
 }
 
-.swiper-slide {
+.game-pharm-swiper-slide {
 	text-align: center;
 	font-size: 18px;
 	flex-flow: column;
@@ -237,13 +237,16 @@ p, h2 {
 	width: 346px;
 }
 
-.swiper-button-prev:after, .swiper-container-rtl .swiper-button-next:after, .swiper-button-next:after, .swiper-container-rtl .swiper-button-prev:after {
+.game-pharm-swiper-button-prev:after,
+.game-pharm-swiper-container-rtl .game-pharm-swiper-button-next:after,
+.game-pharm-swiper-button-next:after,
+.game-pharm-swiper-container-rtl .game-pharm-swiper-button-prev:after {
 	font-size: 23px;
 	font-weight: bold;
 	color: #0071ba;
 }
 
-.swiper-button-next, .swiper-button-prev {
+.game-pharm-swiper-button-next, .game-pharm-swiper-button-prev {
 	top: 56%;
 }
 
@@ -406,7 +409,7 @@ p, h2 {
 	border: 1px solid purple;
 }
 
-.game-pharm-success .swiper-slide {
+.game-pharm-success .game-pharm-swiper-slide {
 	pointer-events: none;
 }
 
@@ -447,15 +450,15 @@ p, h2 {
 		line-height: 3vh;
 	}
 
-	.swiper-slide.active .game-pharm-shadow-wrapper, .swiper-slide:hover .game-pharm-shadow-wrapper {
+	.game-pharm-swiper-slide.active .game-pharm-shadow-wrapper, .game-pharm-swiper-slide:hover .game-pharm-shadow-wrapper {
 		padding-top: 16px;
 	}
 
-	.swiper-slide .game-pharm-shadow-wrapper {
+	.game-pharm-swiper-slide .game-pharm-shadow-wrapper {
 		padding-top: 21px;
 	}
 
-	.swiper-container {
+	.game-pharm-swiper-container {
 		left: 50%;
 		transform: translateX(-50%);
 	}
@@ -525,11 +528,11 @@ p, h2 {
 		width: 2.3vw;
 		height: 2.3vw;
 	}
-	.swiper-slide.active .game-pharm-shadow-wrapper, .swiper-slide:hover .game-pharm-shadow-wrapper {
+	.game-pharm-swiper-slide.active .game-pharm-shadow-wrapper, .game-pharm-swiper-slide:hover .game-pharm-shadow-wrapper {
 		padding-top: 16px;
 	}
 
-	.swiper-slide .game-pharm-shadow-wrapper {
+	.game-pharm-swiper-slide .game-pharm-shadow-wrapper {
 		padding-top: 21px;
 	}
 

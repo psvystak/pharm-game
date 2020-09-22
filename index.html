@@ -163,23 +163,23 @@
 		</div>
 		<div class="game-pharm-close-button" @click="closePopup()"></div>
 		<!-- Swiper -->
-		<div class="swiper-container">
-			<div class="swiper-wrapper">
-				<div class="swiper-slide" v-for="(item, index) in thumbs" :key="index" :class="[{active: item.active}, item.dataId]" @click="toggleActiveState(index)">
+		<div class="game-pharm-swiper-container">
+			<div class="game-pharm-swiper-wrapper">
+				<div class="game-pharm-swiper-slide" v-for="(item, index) in thumbs" :key="index" :class="[{active: item.active}, item.dataId]" @click="toggleActiveState(index)">
 					<div class="game-pharm-shadow-wrapper">
 						<p v-html="item.name"></p>
 						<img :src="item.src" :alt="item.name">
 					</div>
 				</div>
 			</div>
-			<div class="swiper-button-next"></div>
-			<div class="swiper-button-prev"></div>
+			<div class="game-pharm-swiper-button-next"></div>
+			<div class="game-pharm-swiper-button-prev"></div>
 		</div>
 		<!-- Swiper JS -->
 	</div>
 </section>
 <script src="js/vue@3.0.0-rc.12.js"></script>
-<script src="js/swiper-bundle.min.js"></script>
+<script src="js/swiper-game-pharm.js"></script>
 <script src="js/script.js"></script>
 </body>
 
