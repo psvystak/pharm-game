@@ -238,16 +238,16 @@ p, h2 {
 	width: 346px;
 }
 
-.game-pharm-swiper-container .swiper-button-prev:after,
-.game-pharm-swiper-container .game-pharm-swiper-container-rtl .swiper-button-next:after,
-.game-pharm-swiper-container .swiper-button-next:after,
-.game-pharm-swiper-container .game-pharm-swiper-container-rtl .swiper-button-prev:after {
+.game-pharm-swiper-slide .swiper-button-prev:after,
+.game-pharm-swiper-slide .game-pharm-swiper-container-rtl .swiper-button-next:after,
+.game-pharm-swiper-slide .swiper-button-next:after,
+.game-pharm-swiper-slide .game-pharm-swiper-container-rtl .swiper-button-prev:after {
 	font-size: 23px;
 	font-weight: bold;
 	color: #0071ba;
 }
 
-.game-pharm-swiper-container .swiper-button-next, .game-pharm-swiper-container .swiper-button-prev {
+.game-pharm-swiper-slide .swiper-button-next, .game-pharm-swiper-slide .swiper-button-prev {
 	top: 56%;
 }
 
