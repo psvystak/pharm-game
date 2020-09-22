@@ -1,32 +1,16 @@
 @import "fonts.css";
 @import "animations.css";
-
-html, body {
-	position: relative;
-	height: 100%;
-}
-
-body {
-	background: #eee;
-	font-family: HelveticaNeueCyr, sans-serif;
-	font-size: 14px;
-	color: #000;
-	margin: 0;
-	padding: 0;
-}
+@import "normalize.css";
 
 body.disable-scroll {
 	overflow: hidden;
-}
-
-p, h2 {
-	margin: 0;
 }
 
 .game-pharm-section {
 	background: url("../images/bg.jpg") no-repeat center/cover;
 	box-sizing: border-box;
 	padding: 88px 0 30px 0;
+	margin-bottom: 50px;
 }
 
 .game-pharm-section h2 {
@@ -238,6 +222,10 @@ p, h2 {
 	width: 346px;
 }
 
+.game-pharm-popup-wrapper {
+	z-index: 71;
+}
+
 .game-pharm-swiper-container .swiper-button-prev:after,
 .game-pharm-swiper-container .game-pharm-swiper-container-rtl .swiper-button-next:after,
 .game-pharm-swiper-container .swiper-button-next:after,
@@ -415,7 +403,7 @@ p, h2 {
 }
 
 @media screen and (max-width: 1024px) and (orientation: landscape) {
-	.game-pharm-close-button{
+	.game-pharm-close-button {
 		width: 2.3vw;
 		height: 2.3vw;
 	}
@@ -525,10 +513,11 @@ p, h2 {
 
 
 @media screen and (max-width: 1024px) and (orientation: portrait) {
-	.game-pharm-close-button{
+	.game-pharm-close-button {
 		width: 2.3vw;
 		height: 2.3vw;
 	}
+
 	.game-pharm-swiper-slide.active .game-pharm-shadow-wrapper, .game-pharm-swiper-slide:hover .game-pharm-shadow-wrapper {
 		padding-top: 16px;
 	}

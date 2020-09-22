@@ -1,0 +1,17 @@
+body {
+	background: #eee;
+	font-family: HelveticaNeueCyr, sans-serif;
+	font-size: 14px;
+	color: #000;
+	margin: 0;
+	padding: 0;
+}
+
+p, h2 {
+	margin: 0;
+}
+
+html, body {
+	position: relative;
+	height: 100%;
+}
